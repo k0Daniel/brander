@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="./script.js"></script>
+		<title>Brander</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="wrapper header__wrapper">
+				<div>
+					<input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+					<label for="burger-checkbox" class="burger"></label>
+					<ul class="menu-list">
+						<li><a href="#" class="menu-item">Главная</a></li>
+						<li><a href="#" class="menu-item">О нас</a></li>
+						<li><a href="#" class="menu-item">Команда</a></li>
+						<li><a href="#" class="menu-item">Контакты</a></li>
+					</ul>
+				</div>
+				<a class="header__logo">BRANDER</a>
+				<div class="header__rc">
+					<button id="searchbox" class="header__searchbox">
+						<img src="./img/search.svg" />
+					</button>
+					<a href="#" class="header__fav"><img src="./img/favorite.svg" /></a>
+					<a href="#" class="header__a header__auth">
+						<img src="./img/user.svg" alt="user ico" />
+						<div class="auth__desc">Войти</div>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<a href="#" id="button_up"><img src="./img/button_up.svg" alt="arrow up" /></a>
+		<div class="searchbox-big">
+			<form class="searchbox-form">
+				<div>
+					<img src="./img/search_icon.svg" alt="search" class="search-icon">
+					<input id="search__input" placeholder="Напишите что-нибудь..." type="search" />
+				</div>
+				<input id="search__submit" value="Найти" type="submit" />
+			</form>
+			<div class="searchbox__popular-names">
+				<p class="searchbox-p">Часто ищут</p>
+				<ul>
+					<li class="searchbox-list"><img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search"><a class="searchbox-list-a" href="#">nike</a></li>
+					<li class="searchbox-list"><img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search"><a class="searchbox-list-a" href="#">new balance</a></li>
+					<li class="searchbox-list"><img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search"><a class="searchbox-list-a" href="#">adidas</a></li>
+				</ul>
+			</div>
+			<div class="searchbox__popular-items">
+				<p class="searchbox-p">Популярные товары</p>
+			</div>
+		</div>
+
+		<main class="main" hidden>
+			<section class="first">
+				<div class="main__banner">
+					<div class="main__big-image">
+						<img src="./img/main_mockup.svg" alt="" />
+					</div>
+					<div class="main__text-container">
+						<h1 class="main__h1">ДОСТАВКА ТОВАРОВ<br />ИЗ МАГАЗИНОВ США, ЕВРОПЫ, ТУРЦИИ И АЗИИ</h1>
+						<div class="main__desc">Цены дешевле, чем в РФ, на 40% и более</div>
+						<a class="main__button" href="#"> Перейти в каталог </a>
+					</div>
+				</div>
+			</section>
+			<div class="main__wrapper">
+				<h2 class="main__wrapper-header">Повседневная обувь</h2>
+				<section class="main__wrapper-row">
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Кроссовки</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Ретро-баскетбольные</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Спортивные</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Дутые</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Кеды</h3>
+						</a>
+					</div>
+				</section>
+
+				<h2 class="main__wrapper-header">Обувь для спорта</h2>
+				<section class="main__wrapper-row">
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker1.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Бег</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker1.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Баскетбол</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker1.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Футбол</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker1.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Тренировочная</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker1.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Бадминтон</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker1.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Теннис</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker1.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Гольф</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/sneaker1.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Велосипед</h3>
+						</a>
+					</div>
+				</section>
+
+				<h2 class="main__wrapper-header">Тапки</h2>
+				<section class="main__wrapper-row">
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/slipper0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Тапки Bautuo</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/slipper0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Спортивные тапки</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/slipper0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Шлепанцы</h3>
+						</a>
+					</div>
+					<div class="main__wrapper-sneaker">
+						<a href="#" class="sneaker__content">
+							<img src="./img/slipper0.png" class="main__wrapper-img" />
+							<p class="main__wrapper-p">120 000 моделей</p>
+							<h3 class="main__wrapper-name">Спортивные сандалии</h3>
+						</a>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer__bg">
+			<div class="footer__wrapper">
+				<nav class="footer__about-nav">
+					<div class="column">
+						<h3 class="footer__about-h">МАГАЗИН</h3>
+						<a class="footer__about-link" href="#">Магазин в Ростове-на-Дону</a>
+						<a class="footer__about-link" href="#">Оплата</a>
+						<a class="footer__about-link" href="#">Доставка</a>
+						<a class="footer__about-link" href="#">Помощь</a>
+						<a class="footer__about-link" href="#">Гарантия и безопасность</a>
+						<a class="footer__about-link" href="#">Проверка на оригинальность</a>
+						<a class="footer__about-link" href="#">Как выбрать размер</a>
+					</div>
+					<div class="column">
+						<h3 class="footer__about-h">КОМПАНИЯ</h3>
+						<a class="footer__about-link" href="#">Приложение</a>
+						<a class="footer__about-link" href="#">Отзывы</a>
+						<a class="footer__about-link" href="#">Контакты</a>
+					</div>
+					<div class="column">
+						<h3 class="footer__about-h">КАТАЛОГ</h3>
+						<a class="footer__about-link" href="#">Кроссовки</a>
+						<a class="footer__about-link" href="#">Одежда</a>
+						<a class="footer__about-link" href="#">Аксессуары</a>
+						<a class="footer__about-link" href="#">Все бренды</a>
+					</div>
+				</nav>
+				<section class="footer__about-info">
+					<a class="footer__logo">BRANDER</a>
+					<p class="footer__about-p">
+						Наш бот рассчитает Ваш заказ, расскажет о его статусе и ответит на любые Ваши вопросы:
+					</p>
+					<a class="footer__about-button" href="#"
+						><img src="./img/robot.svg" class="footer__about-robot" /><span>Бот Brander</span></a
+					>
+				</section>
+			</div>
+			<hr class="footer__line" />
+			<section class="footer__social">
+				<p class="footer__social-p">© 2024 ООО “Компания”. Все права защищены</p>
+				<div class="footer__social-links">
+					<a href="#" class="footer__social-link"><img src="./img/telegram_logo.svg" /></a>
+					<a href="#" class="footer__social-link"><img src="./img/insta_logo.svg" /></a>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
