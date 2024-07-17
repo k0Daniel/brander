@@ -35,28 +35,83 @@
 		</header>
 
 		<a href="#" id="button_up"><img src="./img/button_up.svg" alt="arrow up" /></a>
-		<div class="searchbox-big">
+
+		<!-- блок поиска -->
+		<div class="searchbox-bigbg">
+			<div class="searchbox-big">
 			<form class="searchbox-form">
 				<div>
-					<img src="./img/search_icon.svg" alt="search" class="search-icon">
+					<img src="./img/search_icon.svg" alt="search" class="search-icon" />
 					<input id="search__input" placeholder="Напишите что-нибудь..." type="search" />
 				</div>
 				<input id="search__submit" value="Найти" type="submit" />
 			</form>
-			<div class="searchbox__popular-names">
-				<p class="searchbox-p">Часто ищут</p>
-				<ul>
-					<li class="searchbox-list"><img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search"><a class="searchbox-list-a" href="#">nike</a></li>
-					<li class="searchbox-list"><img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search"><a class="searchbox-list-a" href="#">new balance</a></li>
-					<li class="searchbox-list"><img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search"><a class="searchbox-list-a" href="#">adidas</a></li>
-				</ul>
-			</div>
-			<div class="searchbox__popular-items">
-				<p class="searchbox-p">Популярные товары</p>
+			<div class="searchbox__wrapper">
+				<div class="searchbox__popular-names">
+					<p class="searchbox-p">Часто ищут</p>
+					<ul>
+						<li class="searchbox-list">
+							<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
+								class="searchbox-list-a"
+								href="#"
+								>nike</a
+							>
+						</li>
+						<li class="searchbox-list">
+							<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
+								class="searchbox-list-a"
+								href="#"
+								>new balance</a
+							>
+						</li>
+						<li class="searchbox-list">
+							<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
+								class="searchbox-list-a"
+								href="#"
+								>adidas</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="searchbox__popular-items">
+					<p class="searchbox-p">Популярные товары</p>
+					<div class="searchbox__popular-cards">
+						<div class="searchbox__popular-sneaker">
+							<a href="#" class="searchbox__popular-content">
+								<img src="./img/sneaker1.png" class="searchbox__popular-img" />
+								<p class="searchbox__popular-p">New Balance NB 530 D</p>
+								<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+							</a>
+						</div>
+						<div class="searchbox__popular-sneaker">
+							<a href="#" class="searchbox__popular-content">
+								<img src="./img/sneaker1.png" class="searchbox__popular-img" />
+								<p class="searchbox__popular-p">New Balance NB 530 D</p>
+								<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+							</a>
+						</div>
+						<div class="searchbox__popular-sneaker">
+							<a href="#" class="searchbox__popular-content">
+								<img src="./img/sneaker1.png" class="searchbox__popular-img" />
+								<p class="searchbox__popular-p">New Balance NB 530 D</p>
+								<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+							</a>
+						</div>
+						<div class="searchbox__popular-sneaker">
+							<a href="#" class="searchbox__popular-content">
+								<img src="./img/sneaker1.png" class="searchbox__popular-img" />
+								<p class="searchbox__popular-p">New Balance NB 530 D</p>
+								<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<main class="main" hidden>
+		<button id="searchbox__close-button"><img src="./img/button_close.svg"></button>
+		</div>
+<!-- конец блока поиска -->
+		<main class="main">
 			<section class="first">
 				<div class="main__banner">
 					<div class="main__big-image">

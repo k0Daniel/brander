@@ -156,10 +156,16 @@ body {
 	border: 0;
 	cursor: pointer;
 }
+.header__searchbox:hover {
+	opacity: 0.7;
+}
 
 .header__fav {
 	width: 30px;
 	height: 30px;
+}
+.header__fav:hover {
+	opacity: 0.7;
 }
 .header__auth {
 	display: flex;
@@ -168,6 +174,9 @@ body {
 	padding: 5px 15px;
 	border: 2px solid black;
 	border-radius: 7px;
+}
+.header__auth:hover {
+	opacity: 0.7;
 }
 
 .main__big-image {
@@ -328,6 +337,7 @@ body {
 	font-family: Golos;
 	font-size: 55px;
 	font-weight: 600;
+	pointer-events: none;
 }
 
 .footer__about-button {
@@ -377,6 +387,7 @@ body {
 	font-size: 20px;
 	font-weight: 400;
 	margin: 0;
+	pointer-events: none;
 }
 .footer__social-link:hover {
 	opacity: 0.7;
@@ -385,10 +396,16 @@ body {
 	display: flex;
 	gap: 29px;
 }
-
+.searchbox-bigbg {
+	width: 1920px;
+	height: 1000px;
+	backdrop-filter: blur(5px);
+	background: rgba(71, 71, 71, 0.5);
+}
 .searchbox-big {
 	width: 1569px;
-	background-color: aqua;
+	background: rgb(255, 255, 255);
+	border-radius: 10px;
 	margin: 0 auto;
 	padding-top: 67px;
 }
@@ -427,14 +444,19 @@ body {
 	margin-left: 91px;
 	margin: 16px 0 18px 91px;
 }
+.searchbox__wrapper {
+	display: flex;
+}
 .searchbox__popular-names {
 	max-width: 250px;
+	margin-left: 96px;
 }
 .searchbox-p {
 	color: rgb(0, 0, 0);
 	font-family: Golos;
 	font-size: 27px;
 	font-weight: 600;
+	margin-bottom: 23px;
 }
 .searchbox-list {
 	color: rgb(0, 0, 0);
@@ -442,11 +464,59 @@ body {
 	font-size: 22px;
 	font-weight: 400;
 	align-items: center;
+	margin-bottom: 9px;
 }
 .searchbox-list-a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 }
+.searchbox-list-a:hover {
+	opacity: 0.7;
+}
 .searchbox-magnifier {
 	margin-right: 17px;
+}
+
+.searchbox__popular-items {
+	margin: 10px 0 0 169px;
+}
+.searchbox__popular-cards {
+	display: flex;
+}
+.searchbox__popular-img {
+	width: 222px;
+	height: 134px;
+}
+.searchbox__popular-img:hover {
+	opacity: 0.9;
+}
+
+.searchbox__popular-p {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 19px 0 5px 0;
+}
+.searchbox__popular-name {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 18px;
+	font-weight: 500;
+}
+.searchbox__popular-sneaker {
+	width: 241px;
+	height: 219px;
+}
+.searchbox__popular-content {
+	text-decoration: none;
+}
+
+#searchbox__close-button {
+	position: absolute;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	right: 127.8px;
+	top: 24px;
 }

@@ -38,5 +38,27 @@ document.addEventListener('DOMContentLoaded', function () {
 	checkButtonPosition();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+	const button = document.getElementById('searchbox__close-button');
+	const search = document.getElementById('searchbox');
+	const header = document.querySelector('.header');
+	const popUpSearch = document.querySelector('.searchbox-bigbg');
+	const arrowUp = document.getElementById('button_up');
 
-searchbox;
+	popUpSearch.hidden = true;
+
+	button.addEventListener('click', closePopUp);
+	search.addEventListener('click', openPopUp);
+
+	function closePopUp() {
+		popUpSearch.hidden = true;
+		header.style.display = 'block';
+		arrowUp.hidden = false;
+	}
+
+	function openPopUp() {
+		popUpSearch.hidden = false;
+		header.style.display = 'none';
+		arrowUp.hidden = true;
+	}
+});
