@@ -171,9 +171,13 @@ body {
 	display: flex;
 	font-size: 16px;
 	gap: 15px;
-	padding: 5px 15px;
+	padding: 10px 34px 10px 24px;
 	border: 2px solid black;
 	border-radius: 7px;
+	color: rgb(21, 21, 21);
+	font-family: Golos;
+	font-size: 16px;
+	font-weight: 500;
 }
 .header__auth:hover {
 	opacity: 0.7;
@@ -397,6 +401,7 @@ body {
 	gap: 29px;
 }
 .searchbox-bigbg {
+	position: fixed;
 	width: 1920px;
 	height: 1000px;
 	backdrop-filter: blur(5px);
@@ -438,6 +443,7 @@ body {
 	font-size: 22px;
 	font-weight: 600;
 	margin: 0 96px 0 0;
+	cursor: pointer;
 }
 .search-icon {
 	position: absolute;
@@ -482,6 +488,7 @@ body {
 }
 .searchbox__popular-cards {
 	display: flex;
+	margin-bottom: 67px;
 }
 .searchbox__popular-img {
 	width: 222px;
@@ -519,4 +526,84 @@ body {
 	cursor: pointer;
 	right: 127.8px;
 	top: 24px;
+}
+
+.auth__wrapper {
+	position: fixed;
+	width: 1920px;
+	height: 1075px;
+	backdrop-filter: blur(5px);
+	background: rgba(71, 71, 71, 0.5);
+}
+.auth__bg {
+	width: 535px;
+	height: 375px;
+	border-radius: 10px;
+	backdrop-filter: blur(4px);
+	background: rgb(255, 255, 255);
+	margin: 332px auto 0 auto;
+}
+
+.auth__head {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 27px;
+	font-weight: 600;
+}
+.auth__desc {
+	color: rgb(85, 85, 85);
+	font-family: Golos;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 30px 0 15px 0;
+}
+.auth__form {
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding-top: 62px;
+}
+
+#phoneNum {
+	box-sizing: border-box;
+	border: 1px solid rgb(85, 85, 85);
+	border-radius: 10px;
+	width: 400px;
+	height: 57px;
+	color: rgb(178, 178, 178);
+	font-family: Golos;
+	font-size: 22px;
+	font-weight: 400;
+	padding-left: 26.5px;
+}
+#phoneSubmit {
+	width: 400px;
+	height: 57px;
+	border-radius: 10px;
+	background: rgb(21, 21, 21);
+	color: rgb(255, 255, 255);
+	font-family: Golos;
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 15px;
+	text-indent: -80px;
+	cursor: pointer;
+}
+.arrow_forward {
+	position: absolute;
+	width: 8.96px;
+	height: 14.9px;
+	bottom: 103.41px;
+	right: 190.6px;
+}
+#auth__close-button {
+	position: absolute;
+	background: transparent;
+	border: 0;
+	width: 20.2px;
+	height: 20px;
+	right: 657px;
+	top: 340px;
+	cursor: pointer;
 }

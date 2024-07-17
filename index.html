@@ -26,12 +26,13 @@
 						<img src="./img/search.svg" />
 					</button>
 					<a href="#" class="header__fav"><img src="./img/favorite.svg" /></a>
-					<a href="#" class="header__a header__auth">
+					<a href="#" class="header__a header__auth" id="auth">
 						<img src="./img/user.svg" alt="user ico" />
-						<div class="auth__desc">Войти</div>
+						<div>Войти</div>
 					</a>
 				</div>
 			</div>
+
 		</header>
 
 		<a href="#" id="button_up"><img src="./img/button_up.svg" alt="arrow up" /></a>
@@ -39,78 +40,92 @@
 		<!-- блок поиска -->
 		<div class="searchbox-bigbg">
 			<div class="searchbox-big">
-			<form class="searchbox-form">
-				<div>
-					<img src="./img/search_icon.svg" alt="search" class="search-icon" />
-					<input id="search__input" placeholder="Напишите что-нибудь..." type="search" />
-				</div>
-				<input id="search__submit" value="Найти" type="submit" />
-			</form>
-			<div class="searchbox__wrapper">
-				<div class="searchbox__popular-names">
-					<p class="searchbox-p">Часто ищут</p>
-					<ul>
-						<li class="searchbox-list">
-							<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
-								class="searchbox-list-a"
-								href="#"
-								>nike</a
-							>
-						</li>
-						<li class="searchbox-list">
-							<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
-								class="searchbox-list-a"
-								href="#"
-								>new balance</a
-							>
-						</li>
-						<li class="searchbox-list">
-							<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
-								class="searchbox-list-a"
-								href="#"
-								>adidas</a
-							>
-						</li>
-					</ul>
-				</div>
-				<div class="searchbox__popular-items">
-					<p class="searchbox-p">Популярные товары</p>
-					<div class="searchbox__popular-cards">
-						<div class="searchbox__popular-sneaker">
-							<a href="#" class="searchbox__popular-content">
-								<img src="./img/sneaker1.png" class="searchbox__popular-img" />
-								<p class="searchbox__popular-p">New Balance NB 530 D</p>
-								<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
-							</a>
-						</div>
-						<div class="searchbox__popular-sneaker">
-							<a href="#" class="searchbox__popular-content">
-								<img src="./img/sneaker1.png" class="searchbox__popular-img" />
-								<p class="searchbox__popular-p">New Balance NB 530 D</p>
-								<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
-							</a>
-						</div>
-						<div class="searchbox__popular-sneaker">
-							<a href="#" class="searchbox__popular-content">
-								<img src="./img/sneaker1.png" class="searchbox__popular-img" />
-								<p class="searchbox__popular-p">New Balance NB 530 D</p>
-								<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
-							</a>
-						</div>
-						<div class="searchbox__popular-sneaker">
-							<a href="#" class="searchbox__popular-content">
-								<img src="./img/sneaker1.png" class="searchbox__popular-img" />
-								<p class="searchbox__popular-p">New Balance NB 530 D</p>
-								<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
-							</a>
+				<form class="searchbox-form">
+					<div>
+						<img src="./img/search_icon.svg" alt="search" class="search-icon" />
+						<input id="search__input" placeholder="Напишите что-нибудь..." type="search" />
+					</div>
+					<input id="search__submit" value="Найти" type="submit" />
+				</form>
+				<div class="searchbox__wrapper">
+					<div class="searchbox__popular-names">
+						<p class="searchbox-p">Часто ищут</p>
+						<ul>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>nike</a
+								>
+							</li>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>new balance</a
+								>
+							</li>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>adidas</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="searchbox__popular-items">
+						<p class="searchbox-p">Популярные товары</p>
+						<div class="searchbox__popular-cards">
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="./img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="./img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="./img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="./img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<button id="searchbox__close-button"><img src="./img/button_close.svg" /></button>
 		</div>
-		<button id="searchbox__close-button"><img src="./img/button_close.svg"></button>
+		<!-- конец блока поиска -->
+		<!-- блок авторизации -->
+		<div class="auth__wrapper">
+			<div class="auth__bg">
+				<form class="auth__form">
+					<p class="auth__head">Войти или создать профиль</p>
+				<p class="auth__desc">Телефон</p>
+					<input id="phoneNum" type="tel" placeholder="+7 (999) 999-99-99">
+					<input id="phoneSubmit" type="submit" value="Продолжить">
+					<img class="arrow_forward" src="./img/arrow_forward_ios.svg">
+				</form>
+			</div>
+			<button id="auth__close-button"><img src="./img/button_close.svg" /></button>
 		</div>
-<!-- конец блока поиска -->
+		<!-- конец блока авторизации  -->
 		<main class="main">
 			<section class="first">
 				<div class="main__banner">
