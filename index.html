@@ -13,13 +13,65 @@
 				<div>
 					<input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
 					<label for="burger-checkbox" class="burger"></label>
-					<ul class="menu-list">
-						<li><a href="#" class="menu-item">Главная</a></li>
-						<li><a href="#" class="menu-item">О нас</a></li>
-						<li><a href="#" class="menu-item">Команда</a></li>
-						<li><a href="#" class="menu-item">Контакты</a></li>
-					</ul>
+
+					<!-- блок навигации -->
+					<nav class="menu">
+						<div class="menu-column">
+							<h3>КАТЕГОРИИ</h3>
+							<ul class="menu-list">
+								<li>
+									<details>
+										<summary>Товары в наличии</summary>
+										<ul>
+											<li><a href="#">Кроссовки</a></li>
+											<li><a href="#">Одежда</a></li>
+											<li><a href="#">Обувь</a></li>
+											<li><a href="#">Аксессуары</a></li>
+										</ul>
+									</details>
+								</li>
+								<li>
+									<details><summary>Повседневная обувь</summary></details>
+								</li>
+								<li>
+									<details><summary>Обувь для спорта</summary></details>
+								</li>
+								<li>
+									<details><summary>Другая категория</summary></details>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-column">
+							<h3>ПОПУЛЯРНЫЕ БРЕНДЫ</h3>
+							<ul class="menu-list">
+								<li>
+									<details><summary>Air Jordan</summary></details>
+								</li>
+								<li>
+									<details><summary>Nike</summary></details>
+								</li>
+								<li>
+									<details><summary>New Balance</summary></details>
+								</li>
+								<li>
+									<details><summary>Другой пункт</summary></details>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-column">
+							<h3>ПОКУПАТЕЛЯМ</h3>
+							<ul class="menu-list">
+								<li><a style="margin: 0 0 22px 0" href="#">Приложение</a></li>
+								<li><a style="margin: 0 0 22px 0" href="#">Оплата</a></li>
+								<li><a style="margin: 0 0 22px 0" href="#">Доставка</a></li>
+								<li><a style="margin: 0 0 22px 0" href="#">Другой пункт</a></li>
+							</ul>
+						</div>
+					</nav>
 				</div>
+				<!-- конец блока навигации -->
 				<a class="header__logo">BRANDER</a>
 				<div class="header__rc">
 					<button id="searchbox" class="header__searchbox">
@@ -32,13 +84,12 @@
 					</a>
 				</div>
 			</div>
-
 		</header>
 
 		<a href="#" id="button_up"><img src="./img/button_up.svg" alt="arrow up" /></a>
 
 		<!-- блок поиска -->
-		<div class="searchbox-bigbg">
+		<div class="searchbox-bigbg" hidden>
 			<div class="searchbox-big">
 				<form class="searchbox-form">
 					<div>
@@ -113,163 +164,177 @@
 		</div>
 		<!-- конец блока поиска -->
 		<!-- блок авторизации -->
-		<div class="auth__wrapper">
+		<div class="auth__wrapper" hidden>
 			<div class="auth__bg">
 				<form class="auth__form">
 					<p class="auth__head">Войти или создать профиль</p>
-				<p class="auth__desc">Телефон</p>
-					<input id="phoneNum" type="tel" placeholder="+7 (999) 999-99-99">
-					<input id="phoneSubmit" type="submit" value="Продолжить">
-					<img class="arrow_forward" src="./img/arrow_forward_ios.svg">
+					<p class="auth__desc">Телефон</p>
+					<input id="phoneNum" type="tel" placeholder="+7 (999) 999-99-99" />
+					<input id="phoneSubmit" type="submit" value="Продолжить" />
+					<img class="arrow_forward" src="./img/arrow_forward_ios.svg" />
 				</form>
 			</div>
 			<button id="auth__close-button"><img src="./img/button_close.svg" /></button>
 		</div>
 		<!-- конец блока авторизации  -->
+		<!-- куки -->
+		<div class="cookie__wrapper">
+			<div class="cookie__modal-wrapper">
+				<p class="cookie__text">
+					Мы используем cookies для улучшения нашего сайта и его персонализации для пользователей.<br />
+					Продолжая использовать сайт, вы соглашаетесь с условиями <a href="#"><u>Пользовательского соглашения</u></a>
+				</p>
+				<button class="cookie__button">OK</button>
+			</div>
+		</div>
+		<!-- конец куки -->
 		<main class="main">
-			<section class="first">
-				<div class="main__banner">
-					<div class="main__big-image">
-						<img src="./img/main_mockup.svg" alt="" />
+			<div class="content__wrapper">
+				<section class="first">
+					<div class="main__banner">
+						<div class="main__big-image">
+							<img src="./img/main_mockup.svg" alt="" />
+						</div>
+						<div class="main__text-container">
+							<h1 class="main__h1">ДОСТАВКА ТОВАРОВ<br />ИЗ МАГАЗИНОВ США, ЕВРОПЫ, ТУРЦИИ И АЗИИ</h1>
+							<p class="main__desc">Цены дешевле, чем в РФ, на 40% и более</p>
+							<p class="main__note">* Только из официальных магазинов</p>
+							<a class="main__button" href="#"> Перейти в каталог </a>
+						</div>
 					</div>
-					<div class="main__text-container">
-						<h1 class="main__h1">ДОСТАВКА ТОВАРОВ<br />ИЗ МАГАЗИНОВ США, ЕВРОПЫ, ТУРЦИИ И АЗИИ</h1>
-						<div class="main__desc">Цены дешевле, чем в РФ, на 40% и более</div>
-						<a class="main__button" href="#"> Перейти в каталог </a>
-					</div>
+				</section>
+				<div class="main__wrapper">
+					<h2 class="main__wrapper-header">Повседневная обувь</h2>
+					<section class="main__wrapper-row">
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Кроссовки</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Ретро-баскетбольные</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Спортивные</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Дутые</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Кеды</h3>
+							</a>
+						</div>
+					</section>
+
+					<h2 class="main__wrapper-header">Обувь для спорта</h2>
+					<section class="main__wrapper-row">
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker1.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Бег</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker1.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Баскетбол</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker1.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Футбол</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker1.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Тренировочная</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker1.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Бадминтон</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker1.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Теннис</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker1.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Гольф</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/sneaker1.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Велосипед</h3>
+							</a>
+						</div>
+					</section>
+
+					<h2 class="main__wrapper-header">Тапки</h2>
+					<section class="main__wrapper-row">
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/slipper0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Тапки Bautuo</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/slipper0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Спортивные тапки</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/slipper0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Шлепанцы</h3>
+							</a>
+						</div>
+						<div class="main__wrapper-sneaker">
+							<a href="#" class="sneaker__content">
+								<img src="./img/slipper0.png" class="main__wrapper-img" />
+								<p class="main__wrapper-p">120 000 моделей</p>
+								<h3 class="main__wrapper-name">Спортивные сандалии</h3>
+							</a>
+						</div>
+					</section>
 				</div>
-			</section>
-			<div class="main__wrapper">
-				<h2 class="main__wrapper-header">Повседневная обувь</h2>
-				<section class="main__wrapper-row">
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Кроссовки</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Ретро-баскетбольные</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Спортивные</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Дутые</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Кеды</h3>
-						</a>
-					</div>
-				</section>
-
-				<h2 class="main__wrapper-header">Обувь для спорта</h2>
-				<section class="main__wrapper-row">
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker1.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Бег</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker1.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Баскетбол</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker1.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Футбол</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker1.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Тренировочная</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker1.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Бадминтон</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker1.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Теннис</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker1.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Гольф</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/sneaker1.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Велосипед</h3>
-						</a>
-					</div>
-				</section>
-
-				<h2 class="main__wrapper-header">Тапки</h2>
-				<section class="main__wrapper-row">
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/slipper0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Тапки Bautuo</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/slipper0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Спортивные тапки</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/slipper0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Шлепанцы</h3>
-						</a>
-					</div>
-					<div class="main__wrapper-sneaker">
-						<a href="#" class="sneaker__content">
-							<img src="./img/slipper0.png" class="main__wrapper-img" />
-							<p class="main__wrapper-p">120 000 моделей</p>
-							<h3 class="main__wrapper-name">Спортивные сандалии</h3>
-						</a>
-					</div>
-				</section>
 			</div>
 		</main>
 		<footer class="footer__bg">

@@ -44,8 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const popUpSearch = document.querySelector('.searchbox-bigbg');
 	const arrowUp = document.getElementById('button_up');
 
-	popUpSearch.hidden = true;
-
 	closeButton.addEventListener('click', togglePopUp);
 	searchIcon.addEventListener('click', togglePopUp);
 
@@ -83,8 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const wrapperPopUp = document.querySelector('.auth__wrapper');
 	const arrowUp = document.getElementById('button_up');
 	const header = document.querySelector('.header');
-
-	wrapperPopUp.hidden = true;
 
 	button.addEventListener('click', closePopUp);
 	auth.addEventListener('click', openPopUp);
@@ -156,4 +152,34 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 		return '+7 (' + value.slice(1, 4) + ') ' + value.slice(4, 7) + '-' + value.slice(7, 9) + '-' + value.slice(9, 11);
 	}
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+	const checkbox = document.getElementById('burger-checkbox');
+	const body = document.body;
+	const arrowUp = document.getElementById('button_up');
+
+	checkbox.addEventListener('change', function () {
+		if (this.checked) {
+			body.style.overflow = 'hidden';
+			arrowUp.hidden = !arrowUp.hidden;
+		} else {
+			body.style.overflow = 'auto';
+			arrowUp.hidden = !arrowUp.hidden;
+		}
+	});
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+	const cookieWrapper = document.querySelector('.cookie__wrapper');
+	const cookieButton = document.querySelector('.cookie__button');
+
+	if (!localStorage.getItem('cookieAccepted')) {
+		cookieWrapper.style.display = 'flex';
+	}
+
+	cookieButton.addEventListener('click', function () {
+		cookieWrapper.style.display = 'none';
+		localStorage.setItem('cookieAccepted', 'true');
+	});
 });
