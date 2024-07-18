@@ -1,21 +1,3 @@
-// // Функция для проверки ширины и обновления контента
-// function checkWidthAndUpdateContent() {
-//     if (window.innerWidth < 1300) {
-//         // Очищаем содержимое body
-//         document.body.innerHTML = '';
-
-//         // Добавляем элемент с сообщением в body
-//         document.body.appendChild(message);
-//     }
-// }
-
-// // При загрузке страницы проверяем ширину
-// checkWidthAndUpdateContent();
-
-// // Добавляем обработчик события на изменение размера окна
-// window.addEventListener('resize', checkWidthAndUpdateContent);
-
-
 document.addEventListener('DOMContentLoaded', function () {
 	const button = document.getElementById('button_up');
 	const footer = document.querySelector('.footer__bg');
