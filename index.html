@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
-		<script src="./script.js"></script>
+		<script src="./script.js" defer></script>
 		<title>Brander</title>
 	</head>
 	<body>
@@ -202,25 +202,63 @@
 				</div>
 				<div class="mobile__content">
 					<div class="mobile__content-header">
+						
 						<h3>Обувь</h3>
-						<a class="mobile__watch-all">Смотреть всё<img src="./img/arrow_forward_mobile.svg" /></a>
+						<a class="mobile__watch-all" href="#">Смотреть всё<img src="./img/arrow_forward_mobile.svg" /></a>
 					</div>
 				</div>
-					<div class="grid-container">
-            <div class="grid-item large">Кроссовки и кеды</div>
-            <div class="grid-item small">Ботинки</div>
-			</div>
-			<div class="grid-container">
-            <div class="grid-item small-1">Обувь для спорта</div>
-            <div class="grid-item large-1">Кастомные кроссовки</div>
-			</div>
-			<div class="grid-container">
-            <div class="grid-item large">Сапоги</div>
-            <div class="grid-item small">Тапки</div>
-			</div>
+				<div class="grid-container">
+					<div class="grid-item large"><a href="#">Кроссовки и кеды</a></div>
+					<div class="grid-item small"><a href="#">Ботинки</a></div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-item small-1"><a href="#">Обувь для спорта</a></div>
+					<div class="grid-item large-1"><a href="#">Кастомные кроссовки</a></div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-item large"><a href="#">Сапоги</a></div>
+					<div class="grid-item small"><a href="#">Тапки</a></div>
+				</div>
+
+				<div class="mobile__content">
+					<div class="mobile__content-header">
+						<h3>Одежда</h3>
+						<a class="mobile__watch-all" href="#">Смотреть всё<img src="./img/arrow_forward_mobile.svg" /></a>
+					</div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-item large"><a href="#">Верхняя одежда</a></div>
+					<div class="grid-item small"><a href="#">Футболки</a></div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-item small-1"><a href="#">Свитшоты</a></div>
+					<div class="grid-item large-1"><a href="#">Худи</a></div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-item large"><a href="#">Джинсы</a></div>
+					<div class="grid-item small"><a href="#">Кепки и шапки</a></div>
+				</div>
+
+				<div class="mobile__content">
+					<div class="mobile__content-header">
+						<h3>Аксессуары</h3>
+						<a class="mobile__watch-all" href="#">Смотреть всё<img src="./img/arrow_forward_mobile.svg" /></a>
+					</div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-item large"><a href="#">Сумки и рюкзаки</a></div>
+					<div class="grid-item small"><a href="#">Часы</a></div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-item small-1"><a href="#">Очки</a></div>
+					<div class="grid-item large-1"><a href="#">Кошельки и карточницы</a></div>
+				</div>
+				
+				<button class="mobile__go-catalog"><a href="#">Перейти в каталог<img src="./img/arrow_forward_mobile.svg" /></a></button>
+				
 			</div>
 			<!-- для пк ниже -->
-			<div class="content__wrapper" hidden>
+			<div class="content__wrapper">
 				<section class="first">
 					<div class="main__banner">
 						<div class="main__big-image">
@@ -368,7 +406,49 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer__bg" hidden>
+		<!-- footer для мобильных снизу -->
+		 <footer class="footer__bg-mobile">
+			<div class="footer__wrapper">
+				<section class="footer__about-info">
+					<a class="footer__logo">BRANDER</a>
+					<a class="footer__about-button" href="#"
+						><img src="./img/robot.svg" class="footer__about-robot" /><span>Бот Brander</span></a>
+				</section>
+				<nav class="footer__about-nav">
+					<div class="column">
+						<h3 class="footer__about-h">МАГАЗИН</h3>
+						<a class="footer__about-link" href="#">Магазин<br>в Ростове-на-Дону</a>
+						<a class="footer__about-link" href="#">Оплата</a>
+						<a class="footer__about-link" href="#">Доставка</a>
+						<a class="footer__about-link" href="#">Помощь</a>
+						<a class="footer__about-link" href="#">Гарантия и безопасность</a>
+						<a class="footer__about-link" href="#">Проверка на оригинальность</a>
+						<a class="footer__about-link" href="#">Как выбрать размер</a>
+					</div>
+					<div class="column">
+						<h3 class="footer__about-h">КОМПАНИЯ</h3>
+						<a class="footer__about-link" href="#">Приложение</a>
+						<a class="footer__about-link" href="#">Отзывы</a>
+						<a class="footer__about-link" href="#">Контакты</a>
+						<h3 class="footer__about-h footer-margin">КАТАЛОГ</h3>
+						<a class="footer__about-link" href="#">Кроссовки</a>
+						<a class="footer__about-link" href="#">Одежда</a>
+						<a class="footer__about-link" href="#">Аксессуары</a>
+						<a class="footer__about-link" href="#">Все бренды</a>
+					</div>
+				</nav>
+			</div>
+			<hr class="footer__line" />
+			<section class="footer__social">
+				<p class="footer__social-p">© 2024 ООО “Компания”. Все права защищены</p>
+				<div class="footer__social-links">
+					<a href="#" class="footer__social-link"><img src="./img/telegram_logo.svg" /></a>
+					<a href="#" class="footer__social-link"><img src="./img/insta_logo.svg" /></a>
+				</div>
+			</section>
+		</footer>
+		<!-- footer для пк снизу -->
+		<footer class="footer__bg">
 			<div class="footer__wrapper">
 				<nav class="footer__about-nav">
 					<div class="column">

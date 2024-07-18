@@ -15,6 +15,7 @@
 // // Добавляем обработчик события на изменение размера окна
 // window.addEventListener('resize', checkWidthAndUpdateContent);
 
+
 document.addEventListener('DOMContentLoaded', function () {
 	const button = document.getElementById('button_up');
 	const footer = document.querySelector('.footer__bg');
@@ -193,4 +194,17 @@ document.addEventListener('DOMContentLoaded', () => {
 			option.classList.add('active');
 		});
 	});
+});
+
+window.addEventListener('load', function () {
+	function checkScreenSize() {
+		if (window.innerWidth < 393) {
+			document.body.innerHTML =
+				'<p style="font-size: 24px; text-align: center; margin-top: 50%;">Сайт не адаптирован под ваше устройство</p>';
+		}
+	}
+
+	checkScreenSize();
+
+	window.addEventListener('resize', checkScreenSize);
 });
