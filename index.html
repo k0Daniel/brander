@@ -10,7 +10,7 @@
 	<body>
 		<header class="header">
 			<div class="wrapper header__wrapper">
-				<div>
+				<div class="burger-menu">
 					<input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
 					<label for="burger-checkbox" class="burger"></label>
 
@@ -80,7 +80,7 @@
 					<a href="#" class="header__fav"><img src="./img/favorite.svg" /></a>
 					<a href="#" class="header__a header__auth" id="auth">
 						<img src="./img/user.svg" alt="user ico" />
-						<div>Войти</div>
+						<p>Войти</p>
 					</a>
 				</div>
 			</div>
@@ -189,7 +189,38 @@
 		</div>
 		<!-- конец куки -->
 		<main class="main">
-			<div class="content__wrapper">
+			<!-- для мобильных ниже -->
+			<div class="mobile__wrapper">
+				<div class="mobile__first">
+					<h1 class="main__h1">ДОСТАВКА ТОВАРОВ<br />ИЗ МАГАЗИНОВ США, ЕВРОПЫ, ТУРЦИИ И АЗИИ</h1>
+					<p class="main__desc">Цены дешевле, чем в РФ, на 40% и более</p>
+					<p class="main__note">* Только из официальных магазинов</p>
+				</div>
+				<div class="toggle-switch">
+					<div class="option" id="men">Мужчинам</div>
+					<div class="option active" id="women">Женщинам</div>
+				</div>
+				<div class="mobile__content">
+					<div class="mobile__content-header">
+						<h3>Обувь</h3>
+						<a class="mobile__watch-all">Смотреть всё<img src="./img/arrow_forward_mobile.svg" /></a>
+					</div>
+				</div>
+					<div class="grid-container">
+            <div class="grid-item large">Кроссовки и кеды</div>
+            <div class="grid-item small">Ботинки</div>
+			</div>
+			<div class="grid-container">
+            <div class="grid-item small-1">Обувь для спорта</div>
+            <div class="grid-item large-1">Кастомные кроссовки</div>
+			</div>
+			<div class="grid-container">
+            <div class="grid-item large">Сапоги</div>
+            <div class="grid-item small">Тапки</div>
+			</div>
+			</div>
+			<!-- для пк ниже -->
+			<div class="content__wrapper" hidden>
 				<section class="first">
 					<div class="main__banner">
 						<div class="main__big-image">
@@ -337,7 +368,7 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer__bg">
+		<footer class="footer__bg" hidden>
 			<div class="footer__wrapper">
 				<nav class="footer__about-nav">
 					<div class="column">
