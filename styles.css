@@ -2032,3 +2032,141 @@ details li {
 		margin-bottom: 10px;
 	}
 }
+
+/* 404 */
+.notfound__wrapper {
+	max-width: 1377px;
+	margin: 0 auto;
+}
+.notfound__header {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 36px;
+	font-weight: 500;
+	margin: 75px 0 27px 0;
+}
+.search-icon {
+	position: absolute;
+	margin-left: 91px;
+	margin: 16px 0 18px 91px;
+}
+.notfound-icon {
+	position: absolute;
+	margin: 0 0 0 22px;
+}
+.notfound__input {
+	box-sizing: border-box;
+	border: 1px solid rgb(21, 21, 21);
+	border-radius: 10px;
+	padding: 14px 0 12px 67px;
+	width: 85%;
+	height: 53px;
+	color: rgb(178, 178, 178);
+	font-family: Golos;
+	font-size: 22px;
+	font-weight: 400;
+	margin-right: 13px;
+}
+.notfound__submit {
+	border-radius: 10px;
+	background: rgb(21, 21, 21);
+	color: rgb(255, 255, 255);
+	font-family: Golos;
+	font-size: 22px;
+	font-weight: 600;
+	padding: 13px 54px;
+}
+.notfound__go-main {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 32px;
+	font-weight: 400;
+	margin: 40px 0 50px 0;
+}
+.notfound__recomendation {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+.notfound__recomendation-goods {
+	display: flex;
+	gap: 21px;
+}
+.notfound__recomendation-sneaker {
+	width: 355px;
+}
+.notfound__recomendation-p {
+	color: rgb(144, 144, 144);
+	font-family: Golos;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.notfound__recomendation-name {
+	color: rgb(21, 21, 21);
+	font-family: Golos;
+	font-size: 20px;
+	font-weight: 500;
+}
+.notfound__form {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 1310px) {
+	.notfound__wrapper {
+		max-width: 900px;
+	}
+	.notfound__input {
+		max-width: 70%;
+	}
+	.notfound__recomendation-sneaker:last-child {
+		display: none;
+	}
+}
+@media screen and (max-width: 915px) {
+	.notfound__wrapper {
+		max-width: 600px;
+	}
+	.notfound__input {
+		max-width: 60%;
+	}
+	.notfound__recomendation-sneaker:nth-of-type(3) {
+		display: none;
+	}
+	.notfound__submit {
+		padding: 10px 44px;
+	}
+}
+@media screen and (max-width: 625px) {
+	.notfound__wrapper {
+		max-width: 300px;
+	}
+	.notfound__header {
+		font-size: 20px;
+		max-width: 250px;
+		margin: 55px auto 27px auto;
+	}
+	.notfound__input {
+		max-width: 200px;
+	}
+	.notfound__recomendation-goods {
+		display: none;
+	}
+	.notfound__recomendation {
+		display: none;
+	}
+	.notfound__input::placeholder {
+		color: transparent;
+	}
+	.notfound__submit {
+		padding: 15px 10px;
+		font-size: 15px;
+	}
+	.notfound__go-main {
+		font-size: 15px;
+		margin: 20px 0;
+	}
+}
