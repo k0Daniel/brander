@@ -804,7 +804,7 @@ details li {
 		padding: 80px 0 0 152px;
 	}
 	#button_up {
-		right: 5%;
+		right: 12%;
 	}
 }
 @media screen and (max-width: 1601px) and (min-width: 1481px) {
@@ -847,7 +847,7 @@ details li {
 		padding: 80px 0 0 152px;
 	}
 	#button_up {
-		right: 5%;
+		right: 12%;
 	}
 	.main__desc {
 		margin: 20px 0;
@@ -1112,7 +1112,7 @@ details li {
 	}
 }
 
-@media screen and (max-width: 1023px) and (min-width: 846px) {
+@media screen and (max-width: 1023px) and (min-width: 902px) {
 	body {
 		max-width: 1023px;
 	}
@@ -1400,7 +1400,7 @@ details li {
 .searchbox-arrow {
 	display: none;
 }
-@media screen and (max-width: 846px) and (min-width: 425px) {
+@media screen and (max-width: 902px) and (min-width: 425px) {
 	.mobile__content {
 		margin: 31px auto 15px auto;
 	}
@@ -2600,14 +2600,14 @@ input[type='number']::-webkit-outer-spin-button {
 	font-weight: 400;
 }
 @media screen and (max-width: 1244px) {
-		.size__wrapper-header h1 {
+	.size__wrapper-header h1 {
 		font-size: 36px;
 		margin-left: 14px;
 	}
 	.size__wrapper-header h1 {
 		margin-left: 14px;
 	}
-		.size__orange {
+	.size__orange {
 		width: 10px;
 		height: 30px;
 	}
@@ -2689,5 +2689,160 @@ input[type='number']::-webkit-outer-spin-button {
 		min-width: 201px;
 		width: 201px;
 		height: 163px;
+	}
+}
+/* original */
+.original__wrapper-header {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	top: 38%;
+	left: 20%;
+	max-width: 842px;
+}
+.original__wrapper-header h1 {
+	position: relative;
+	color: rgb(255, 255, 255);
+	font-family: Golos;
+	font-size: 59px;
+	font-weight: 700;
+	margin-left: 13px;
+}
+.original__wrapper-bg {
+	position: relative;
+	width: 100%;
+}
+.original__orange {
+	width: 18px;
+	height: 113px;
+	background: rgb(191, 108, 34);
+}
+.original__container-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 1114px;
+	margin: 80px auto 133px auto;
+}
+.original__container-text p {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 24px;
+	font-weight: 400;
+}
+.original__container-text-bold {
+	font-weight: 700;
+}
+.original__content-block {
+	max-width: 1096px;
+	height: 312px;
+	background: rgb(217, 217, 217);
+	margin: 40px 0 53px 0;
+}
+@media screen and (max-width: 1440px) {
+	.original__wrapper-header {
+		top: 22%;
+	}
+	.original__container-text {
+		max-width: 1000px;
+		margin-top: 25px;
+		margin-bottom: 53px;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.original__wrapper-header h1 {
+		font-size: 36px;
+		max-width: 340px;
+	}
+	.original__wrapper-header {
+		top: 22%;
+	}
+	.original__orange {
+		width: 10px;
+		height: 55px;
+	}
+	.original__container-text {
+		max-width: 500px;
+		margin-top: 25px;
+		margin-bottom: 53px;
+	}
+	.original__container-text p {
+		font-size: 14px;
+	}
+	.original__content-block {
+		margin: 27px 0 0 0;
+	}
+}
+@media screen and (max-width: 837px) {
+	.original__wrapper-header h1 {
+		font-size: 20px;
+		max-width: 340px;
+	}
+	.original__wrapper-header {
+		top: 18%;
+	}
+	.original__orange {
+		width: 10px;
+		height: 43px;
+	}
+	.original__container-text {
+		max-width: 500px;
+		margin-top: 25px;
+		margin-bottom: 53px;
+	}
+	.original__container-text p {
+		font-size: 14px;
+	}
+	.original__content-block {
+		margin: 27px 0 0 0;
+	}
+}
+@media screen and (max-width: 649px) {
+	.original__wrapper-header h1 {
+		font-size: 20px;
+		max-width: 340px;
+	}
+	.original__wrapper-header {
+		top: 13%;
+	}
+	.original__orange {
+		width: 10px;
+		height: 43px;
+	}
+	.original__container-text {
+		max-width: 314px;
+		margin-top: 25px;
+		margin-bottom: 53px;
+	}
+	.original__container-text p {
+		font-size: 14px;
+	}
+	.original__content-block {
+		margin: 27px 0 0 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.original__wrapper-header h1 {
+		font-size: 20px;
+		max-width: 340px;
+	}
+	.original__wrapper-header {
+		top: 11%;
+	}
+	.original__orange {
+		width: 10px;
+		height: 43px;
+	}
+	.original__container-text {
+		max-width: 314px;
+		margin-top: 25px;
+		margin-bottom: 53px;
+	}
+	.original__container-text p {
+		font-size: 14px;
+	}
+	.original__content-block {
+		margin: 27px 0 0 0;
 	}
 }
