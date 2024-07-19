@@ -931,7 +931,7 @@ details li {
 		max-width: 1439px;
 	}
 	.header__logo {
-		margin: 0 29% 0 68%;
+		margin: 0 18% 0 68%;
 	}
 	.header__searchbox {
 		margin-left: 40px;
@@ -2345,6 +2345,9 @@ input[type='number']::-webkit-outer-spin-button {
 	font-family: Golos;
 	font-size: 32px;
 	font-weight: 400;
+	box-sizing: border-box;
+	border: 1px solid rgb(183, 183, 183);
+	border-radius: 7px;
 }
 #help__submit-btn {
 	border-radius: 7px;
@@ -2356,4 +2359,176 @@ input[type='number']::-webkit-outer-spin-button {
 	margin-top: 44px;
 	padding: 21px 75px 29px 80px;
 	max-width: 334px;
+}
+
+@media screen and (max-width: 1223px) and (min-width: 768px) {
+	.help__questions {
+		margin-top: 30px;
+		max-width: 600px;
+	}
+	.help_text {
+		font-size: 36px;
+		margin-left: 14px;
+	}
+	.help__banner {
+		width: 100%;
+	}
+	.help__organge {
+		width: 10px;
+		height: 15px;
+	}
+	.pages__header {
+		top: 19%;
+	}
+	.help__column h3 {
+		font-size: 16px;
+		margin-bottom: 14px;
+	}
+	.help__column p {
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+	.help__question-btn {
+		max-width: 200px;
+		max-height: 50px;
+		font-size: 12px;
+		padding: 10px 20px;
+	}
+	.help__logo {
+		width: 30px;
+	}
+	.help__FAQ {
+		max-width: 600px;
+	}
+	.help__FAQ h2 {
+		margin: 30px 0 6px 0;
+		font-size: 20px;
+	}
+	.help__underline {
+		width: 55px;
+		margin-bottom: 34.5px;
+	}
+	.accordion {
+		font-size: 16px;
+		padding: 14.5px 0 15.5px 0;
+	}
+	.panel {
+		font-size: 14px;
+		padding: 15.5px 0 10px 0;
+	}
+	.help__form {
+		margin-top: 40.5px;
+		font-size: 16px;
+		margin-bottom: 36px;
+	}
+	.help__form h3 {
+		font-size: 20px;
+	}
+	.help__underline-form {
+		margin-top: 6px;
+		width: 193px;
+	}
+	.help__form p {
+		font-size: 16px;
+		margin: 25px 0 14px 0;
+	}
+	.help__form-input {
+		max-width: 311px;
+		font-size: 14px;
+		padding: 11px 0 12px 20px;
+	}
+	.help__input-text {
+		font-size: 14px;
+		height: 150px;
+		max-width: 311px;
+		padding-left: 20px;
+	}
+	#help__submit-btn {
+		margin-top: 15px;
+		max-width: 130px;
+		font-size: 14px;
+		padding: 6px 26px 4px 26px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.help__questions {
+		flex-direction: column;
+		margin-top: 30px;
+		max-width: 344px;
+	}
+	.help_text {
+		font-size: 20px;
+		margin-left: 14px;
+	}
+	.help__organge {
+		width: 10px;
+		height: 15px;
+	}
+	.pages__header {
+		top: 12%;
+	}
+	.help__column h3 {
+		font-size: 16px;
+		margin-bottom: 14px;
+	}
+	.help__column p {
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+	.help__question-btn {
+		display: none;
+	}
+	.help__FAQ {
+		max-width: 344px;
+	}
+	.help__FAQ h2 {
+		margin: 30px 0 6px 0;
+		font-size: 20px;
+	}
+	.help__underline {
+		width: 55px;
+		margin-bottom: 34.5px;
+	}
+	.accordion {
+		font-size: 16px;
+		padding: 14.5px 0 15.5px 0;
+	}
+	.panel {
+		font-size: 14px;
+		padding: 15.5px 0 10px 0;
+	}
+	.help__form {
+		margin-top: 40.5px;
+		font-size: 16px;
+		margin-bottom: 36px;
+	}
+	.help__form h3 {
+		font-size: 20px;
+	}
+	.help__underline-form {
+		margin-top: 6px;
+		width: 193px;
+	}
+	.help__form p {
+		font-size: 16px;
+		margin: 25px 0 14px 0;
+	}
+	.help__form-input {
+		max-width: 311px;
+		font-size: 14px;
+		padding: 11px 0 12px 20px;
+	}
+	.help__input-text {
+		font-size: 14px;
+		height: 150px;
+		max-width: 311px;
+		padding-left: 20px;
+	}
+	#help__submit-btn {
+		margin-top: 15px;
+		max-width: 130px;
+		font-size: 14px;
+		padding: 6px 26px 4px 26px;
+	}
 }
