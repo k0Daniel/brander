@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>404</title>
-		<link rel="stylesheet" href="../styles.css" />
-		<script src="../script.js" defer></script>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="./script.js" defer></script>
+		<title>Brander</title>
 	</head>
 	<body>
 		<header class="header">
@@ -23,7 +23,7 @@
 									<details>
 										<summary>Товары в наличии</summary>
 										<ul>
-											<li><a href="#">Кроссовки</a></li>
+											<li><a href="./pages/404.html">Кроссовки</a></li>
 											<li><a href="#">Одежда</a></li>
 											<li><a href="#">Обувь</a></li>
 											<li><a href="#">Аксессуары</a></li>
@@ -65,7 +65,7 @@
 							<ul class="menu-list">
 								<li><a style="margin: 0 0 22px 0" href="#">Приложение</a></li>
 								<li><a style="margin: 0 0 22px 0" href="#">Оплата</a></li>
-								<li><a style="margin: 0 0 22px 0" href="#">Доставка</a></li>
+								<li><a style="margin: 0 0 22px 0" href="./pages/delivery.html">Доставка</a></li>
 								<li><a style="margin: 0 0 22px 0" href="#">Другой пункт</a></li>
 							</ul>
 						</div>
@@ -75,23 +75,26 @@
 				<a class="header__logo">BRANDER</a>
 				<div class="header__rc">
 					<button id="searchbox" class="header__searchbox">
-						<img src="../img/search.svg" />
+						<img src="./img/search.svg" />
 					</button>
-					<a href="#" class="header__fav"><img src="../img/favorite.svg" /></a>
+					<a href="#" class="header__fav"><img src="./img/favorite.svg" /></a>
 					<a href="#" class="header__a header__auth" id="auth">
-						<img src="../img/user.svg" alt="user ico" />
+						<img src="./img/user.svg" alt="user ico" />
 						<p>Войти</p>
 					</a>
 				</div>
 			</div>
 		</header>
+
+		<a href="#" id="button_up"><img src="./img/button_up.svg" alt="arrow up" /></a>
+
 		<!-- блок поиска -->
 		<div class="searchbox-bigbg" hidden>
 			<div class="searchbox-big">
 				<form class="searchbox-form">
 					<div>
-						<img src="../img/Bounding box.svg" class="searchbox-arrow" />
-						<img src="../img/search_icon.svg" alt="search" class="search-icon" />
+						<img src="./img/Bounding box.svg" class="searchbox-arrow" >
+						<img src="./img/search_icon.svg" alt="search" class="search-icon" />
 						<input id="search__input" placeholder="Напишите что-нибудь..." type="search" />
 					</div>
 					<input id="search__submit" value="Найти" type="submit" />
@@ -101,21 +104,21 @@
 						<p class="searchbox-p">Часто ищут</p>
 						<ul>
 							<li class="searchbox-list">
-								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+								<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
 									class="searchbox-list-a"
 									href="#"
 									>nike</a
 								>
 							</li>
 							<li class="searchbox-list">
-								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+								<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
 									class="searchbox-list-a"
 									href="#"
 									>new balance</a
 								>
 							</li>
 							<li class="searchbox-list">
-								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+								<img class="searchbox-magnifier" src="./img/search_icon.svg" alt="search" /><a
 									class="searchbox-list-a"
 									href="#"
 									>adidas</a
@@ -128,28 +131,28 @@
 						<div class="searchbox__popular-cards">
 							<div class="searchbox__popular-sneaker">
 								<a href="#" class="searchbox__popular-content">
-									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<img src="./img/sneaker1.png" class="searchbox__popular-img" />
 									<p class="searchbox__popular-p">New Balance NB 530 D</p>
 									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
 								</a>
 							</div>
 							<div class="searchbox__popular-sneaker">
 								<a href="#" class="searchbox__popular-content">
-									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<img src="./img/sneaker1.png" class="searchbox__popular-img" />
 									<p class="searchbox__popular-p">New Balance NB 530 D</p>
 									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
 								</a>
 							</div>
 							<div class="searchbox__popular-sneaker">
 								<a href="#" class="searchbox__popular-content">
-									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<img src="./img/sneaker1.png" class="searchbox__popular-img" />
 									<p class="searchbox__popular-p">New Balance NB 530 D</p>
 									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
 								</a>
 							</div>
 							<div class="searchbox__popular-sneaker">
 								<a href="#" class="searchbox__popular-content">
-									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<img src="./img/sneaker1.png" class="searchbox__popular-img" />
 									<p class="searchbox__popular-p">New Balance NB 530 D</p>
 									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
 								</a>
@@ -158,7 +161,7 @@
 					</div>
 				</div>
 			</div>
-			<button id="searchbox__close-button"><img src="../img/button_close.svg" /></button>
+			<button id="searchbox__close-button"><img src="./img/button_close.svg" /></button>
 		</div>
 		<!-- конец блока поиска -->
 		<!-- блок авторизации -->
@@ -169,10 +172,10 @@
 					<p class="auth__desc">Телефон</p>
 					<input id="phoneNum" type="tel" placeholder="+7 (999) 999-99-99" />
 					<input id="phoneSubmit" type="submit" value="Продолжить" />
-					<img class="arrow_forward" src="../img/arrow_forward_ios.svg" />
+					<img class="arrow_forward" src="./img/arrow_forward_ios.svg" />
 				</form>
 			</div>
-			<button id="auth__close-button"><img src="../img/button_close.svg" /></button>
+			<button id="auth__close-button"><img src="./img/button_close.svg" /></button>
 		</div>
 		<!-- конец блока авторизации  -->
 		<!-- куки -->
@@ -185,12 +188,12 @@
 				<button class="cookie__button">OK</button>
 			</div>
 		</div>
-        
+		<!-- конец куки -->
 
 
 
 
-        
+
         <!-- footer для мобильных снизу -->
 		<footer class="footer__bg-mobile">
 			<div class="footer__wrapper">
@@ -203,19 +206,19 @@
 				<nav class="footer__about-nav">
 					<div class="column">
 						<h3 class="footer__about-h">МАГАЗИН</h3>
-						<a class="footer__about-link" href="#">Магазин<br />в Ростове-на-Дону</a>
+						<a class="footer__about-link" href="./pages/shop.html">Магазин<br />в Ростове-на-Дону</a>
 						<a class="footer__about-link" href="#">Оплата</a>
-						<a class="footer__about-link" href="#">Доставка</a>
-						<a class="footer__about-link" href="#">Помощь</a>
+						<a class="footer__about-link" href="./pages/delivery.html">Доставка</a>
+						<a class="footer__about-link" href="./pages/help.html">Помощь</a>
 						<a class="footer__about-link" href="#">Гарантия и безопасность</a>
-						<a class="footer__about-link" href="#">Проверка на оригинальность</a>
-						<a class="footer__about-link" href="#">Как выбрать размер</a>
+						<a class="footer__about-link" href="./pages/original.html">Проверка на оригинальность</a>
+						<a class="footer__about-link" href="./pages/size.html">Как выбрать размер</a>
 					</div>
 					<div class="column">
 						<h3 class="footer__about-h">КОМПАНИЯ</h3>
 						<a class="footer__about-link" href="#">Приложение</a>
 						<a class="footer__about-link" href="#">Отзывы</a>
-						<a class="footer__about-link" href="#">Контакты</a>
+						<a class="footer__about-link" href="./pages/contacts.html">Контакты</a>
 						<h3 class="footer__about-h footer-margin">КАТАЛОГ</h3>
 						<a class="footer__about-link" href="#">Кроссовки</a>
 						<a class="footer__about-link" href="#">Одежда</a>
@@ -239,19 +242,19 @@
 				<nav class="footer__about-nav">
 					<div class="column">
 						<h3 class="footer__about-h">МАГАЗИН</h3>
-						<a class="footer__about-link" href="#">Магазин в Ростове-на-Дону</a>
+						<a class="footer__about-link" href="./pages/shop.html">Магазин в Ростове-на-Дону</a>
 						<a class="footer__about-link" href="#">Оплата</a>
-						<a class="footer__about-link" href="#">Доставка</a>
-						<a class="footer__about-link" href="#">Помощь</a>
+						<a class="footer__about-link" href="./pages/delivery.html">Доставка</a>
+						<a class="footer__about-link" href="./pages/help.html">Помощь</a>
 						<a class="footer__about-link" href="#">Гарантия и безопасность</a>
-						<a class="footer__about-link" href="#">Проверка на оригинальность</a>
-						<a class="footer__about-link" href="#">Как выбрать размер</a>
+						<a class="footer__about-link" href="./pages/original.html">Проверка на оригинальность</a>
+						<a class="footer__about-link" href="./pages/size.html">Как выбрать размер</a>
 					</div>
 					<div class="column">
 						<h3 class="footer__about-h">КОМПАНИЯ</h3>
-						<a class="footer__about-link" href="#">Приложение</a>
+						<a class="footer__about-link" href="">Приложение</a>
 						<a class="footer__about-link" href="#">Отзывы</a>
-						<a class="footer__about-link" href="#">Контакты</a>
+						<a class="footer__about-link" href="./pages/contacts.html">Контакты</a>
 					</div>
 					<div class="column">
 						<h3 class="footer__about-h">КАТАЛОГ</h3>
@@ -280,5 +283,3 @@
 				</div>
 			</section>
 		</footer>
-	</body>
-</html>
