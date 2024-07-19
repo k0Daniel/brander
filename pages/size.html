@@ -3,361 +3,350 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Выбор размера</title>
+		<link rel="stylesheet" href="../styles.css" />
+		<script src="../script.js" defer></script>
+		<title>Brander</title>
 	</head>
 	<body>
-		<!DOCTYPE html>
-		<html lang="ru">
-			<head>
-				<meta charset="UTF-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<link rel="stylesheet" href="../styles.css" />
-				<script src="../script.js" defer></script>
-				<title>Brander</title>
-			</head>
-			<body>
-				<header class="header">
-					<div class="wrapper header__wrapper">
-						<div class="burger-menu">
-							<input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
-							<label for="burger-checkbox" class="burger"></label>
+		<header class="header">
+			<div class="wrapper header__wrapper">
+				<div class="burger-menu">
+					<input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+					<label for="burger-checkbox" class="burger"></label>
 
-							<!-- блок навигации -->
-							<nav class="menu">
-								<div class="menu-column">
-									<h3>КАТЕГОРИИ</h3>
-									<ul class="menu-list">
-										<li>
-											<details>
-												<summary>Товары в наличии</summary>
-												<ul>
-													<li><a href="#">Кроссовки</a></li>
-													<li><a href="#">Одежда</a></li>
-													<li><a href="#">Обувь</a></li>
-													<li><a href="#">Аксессуары</a></li>
-												</ul>
-											</details>
-										</li>
-										<li>
-											<details><summary>Повседневная обувь</summary></details>
-										</li>
-										<li>
-											<details><summary>Обувь для спорта</summary></details>
-										</li>
-										<li>
-											<details><summary>Другая категория</summary></details>
-										</li>
-									</ul>
-								</div>
-
-								<div class="menu-column">
-									<h3>ПОПУЛЯРНЫЕ БРЕНДЫ</h3>
-									<ul class="menu-list">
-										<li>
-											<details><summary>Air Jordan</summary></details>
-										</li>
-										<li>
-											<details><summary>Nike</summary></details>
-										</li>
-										<li>
-											<details><summary>New Balance</summary></details>
-										</li>
-										<li>
-											<details><summary>Другой пункт</summary></details>
-										</li>
-									</ul>
-								</div>
-
-								<div class="menu-column">
-									<h3>ПОКУПАТЕЛЯМ</h3>
-									<ul class="menu-list">
-										<li><a style="margin: 0 0 22px 0" href="#">Приложение</a></li>
-										<li><a style="margin: 0 0 22px 0" href="#">Оплата</a></li>
-										<li><a style="margin: 0 0 22px 0" href="../pages/delivery.html">Доставка</a></li>
-										<li><a style="margin: 0 0 22px 0" href="#">Другой пункт</a></li>
-									</ul>
-								</div>
-							</nav>
+					<!-- блок навигации -->
+					<nav class="menu">
+						<div class="menu-column">
+							<h3>КАТЕГОРИИ</h3>
+							<ul class="menu-list">
+								<li>
+									<details>
+										<summary>Товары в наличии</summary>
+										<ul>
+											<li><a href="#">Кроссовки</a></li>
+											<li><a href="#">Одежда</a></li>
+											<li><a href="#">Обувь</a></li>
+											<li><a href="#">Аксессуары</a></li>
+										</ul>
+									</details>
+								</li>
+								<li>
+									<details><summary>Повседневная обувь</summary></details>
+								</li>
+								<li>
+									<details><summary>Обувь для спорта</summary></details>
+								</li>
+								<li>
+									<details><summary>Другая категория</summary></details>
+								</li>
+							</ul>
 						</div>
-						<!-- конец блока навигации -->
-						<a class="header__logo">BRANDER</a>
-						<div class="header__rc">
-							<button id="searchbox" class="header__searchbox">
-								<img src="../img/search.svg" />
-							</button>
-							<a href="#" class="header__fav"><img src="../img/favorite.svg" /></a>
-							<a href="#" class="header__a header__auth" id="auth">
-								<img src="../img/user.svg" alt="user ico" />
-								<p>Войти</p>
-							</a>
-						</div>
-					</div>
-				</header>
 
-				<a href="#" id="button_up"><img src="../img/button_up.svg" alt="arrow up" /></a>
-
-				<!-- блок поиска -->
-				<div class="searchbox-bigbg" hidden>
-					<div class="searchbox-big">
-						<form class="searchbox-form">
-							<div>
-								<img src="../img/Bounding box.svg" class="searchbox-arrow" />
-								<img src="../img/search_icon.svg" alt="search" class="search-icon" />
-								<input id="search__input" placeholder="Напишите что-нибудь..." type="search" />
-							</div>
-							<input id="search__submit" value="Найти" type="submit" />
-						</form>
-						<div class="searchbox__wrapper">
-							<div class="searchbox__popular-names">
-								<p class="searchbox-p">Часто ищут</p>
-								<ul>
-									<li class="searchbox-list">
-										<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
-											class="searchbox-list-a"
-											href="#"
-											>nike</a
-										>
-									</li>
-									<li class="searchbox-list">
-										<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
-											class="searchbox-list-a"
-											href="#"
-											>new balance</a
-										>
-									</li>
-									<li class="searchbox-list">
-										<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
-											class="searchbox-list-a"
-											href="#"
-											>adidas</a
-										>
-									</li>
-								</ul>
-							</div>
-							<div class="searchbox__popular-items">
-								<p class="searchbox-p">Популярные товары</p>
-								<div class="searchbox__popular-cards">
-									<div class="searchbox__popular-sneaker">
-										<a href="#" class="searchbox__popular-content">
-											<img src="../img/sneaker1.png" class="searchbox__popular-img" />
-											<p class="searchbox__popular-p">New Balance NB 530 D</p>
-											<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
-										</a>
-									</div>
-									<div class="searchbox__popular-sneaker">
-										<a href="#" class="searchbox__popular-content">
-											<img src="../img/sneaker1.png" class="searchbox__popular-img" />
-											<p class="searchbox__popular-p">New Balance NB 530 D</p>
-											<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
-										</a>
-									</div>
-									<div class="searchbox__popular-sneaker">
-										<a href="#" class="searchbox__popular-content">
-											<img src="../img/sneaker1.png" class="searchbox__popular-img" />
-											<p class="searchbox__popular-p">New Balance NB 530 D</p>
-											<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
-										</a>
-									</div>
-									<div class="searchbox__popular-sneaker">
-										<a href="#" class="searchbox__popular-content">
-											<img src="../img/sneaker1.png" class="searchbox__popular-img" />
-											<p class="searchbox__popular-p">New Balance NB 530 D</p>
-											<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
-										</a>
-									</div>
-								</div>
-							</div>
+						<div class="menu-column">
+							<h3>ПОПУЛЯРНЫЕ БРЕНДЫ</h3>
+							<ul class="menu-list">
+								<li>
+									<details><summary>Air Jordan</summary></details>
+								</li>
+								<li>
+									<details><summary>Nike</summary></details>
+								</li>
+								<li>
+									<details><summary>New Balance</summary></details>
+								</li>
+								<li>
+									<details><summary>Другой пункт</summary></details>
+								</li>
+							</ul>
 						</div>
-					</div>
-					<button id="searchbox__close-button"><img src="../img/button_close.svg" /></button>
+
+						<div class="menu-column">
+							<h3>ПОКУПАТЕЛЯМ</h3>
+							<ul class="menu-list">
+								<li><a style="margin: 0 0 22px 0" href="#">Приложение</a></li>
+								<li><a style="margin: 0 0 22px 0" href="#">Оплата</a></li>
+								<li><a style="margin: 0 0 22px 0" href="../pages/delivery.html">Доставка</a></li>
+								<li><a style="margin: 0 0 22px 0" href="#">Другой пункт</a></li>
+							</ul>
+						</div>
+					</nav>
 				</div>
-				<!-- конец блока поиска -->
-				<!-- блок авторизации -->
-				<div class="auth__wrapper" hidden>
-					<div class="auth__bg">
-						<form class="auth__form">
-							<p class="auth__head">Войти или создать профиль</p>
-							<p class="auth__desc">Телефон</p>
-							<input id="phoneNum" type="tel" placeholder="+7 (999) 999-99-99" />
-							<input id="phoneSubmit" type="submit" value="Продолжить" />
-							<img class="arrow_forward" src="../img/arrow_forward_ios.svg" />
-						</form>
-					</div>
-					<button id="auth__close-button"><img src="../img/button_close.svg" /></button>
+				<!-- конец блока навигации -->
+				<a class="header__logo">BRANDER</a>
+				<div class="header__rc">
+					<button id="searchbox" class="header__searchbox">
+						<img src="../img/search.svg" />
+					</button>
+					<a href="#" class="header__fav"><img src="../img/favorite.svg" /></a>
+					<a href="#" class="header__a header__auth" id="auth">
+						<img src="../img/user.svg" alt="user ico" />
+						<p>Войти</p>
+					</a>
 				</div>
-				<!-- конец блока авторизации  -->
-				<!-- куки -->
-				<div class="cookie__wrapper">
-					<div class="cookie__modal-wrapper">
-						<p class="cookie__text">
-							Мы используем cookies для улучшения нашего сайта и его персонализации для пользователей.<br />
-							Продолжая использовать сайт, вы соглашаетесь с условиями
-							<a href="#"><u>Пользовательского соглашения</u></a>
+			</div>
+		</header>
+
+		<a href="#" id="button_up"><img src="../img/button_up.svg" alt="arrow up" /></a>
+
+		<!-- блок поиска -->
+		<div class="searchbox-bigbg" hidden>
+			<div class="searchbox-big">
+				<form class="searchbox-form">
+					<div>
+						<img src="../img/Bounding box.svg" class="searchbox-arrow" />
+						<img src="../img/search_icon.svg" alt="search" class="search-icon" />
+						<input id="search__input" placeholder="Напишите что-нибудь..." type="search" />
+					</div>
+					<input id="search__submit" value="Найти" type="submit" />
+				</form>
+				<div class="searchbox__wrapper">
+					<div class="searchbox__popular-names">
+						<p class="searchbox-p">Часто ищут</p>
+						<ul>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>nike</a
+								>
+							</li>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>new balance</a
+								>
+							</li>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>adidas</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="searchbox__popular-items">
+						<p class="searchbox-p">Популярные товары</p>
+						<div class="searchbox__popular-cards">
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="searchbox__close-button"><img src="../img/button_close.svg" /></button>
+		</div>
+		<!-- конец блока поиска -->
+		<!-- блок авторизации -->
+		<div class="auth__wrapper" hidden>
+			<div class="auth__bg">
+				<form class="auth__form">
+					<p class="auth__head">Войти или создать профиль</p>
+					<p class="auth__desc">Телефон</p>
+					<input id="phoneNum" type="tel" placeholder="+7 (999) 999-99-99" />
+					<input id="phoneSubmit" type="submit" value="Продолжить" />
+					<img class="arrow_forward" src="../img/arrow_forward_ios.svg" />
+				</form>
+			</div>
+			<button id="auth__close-button"><img src="../img/button_close.svg" /></button>
+		</div>
+		<!-- конец блока авторизации  -->
+		<!-- куки -->
+		<div class="cookie__wrapper">
+			<div class="cookie__modal-wrapper">
+				<p class="cookie__text">
+					Мы используем cookies для улучшения нашего сайта и его персонализации для пользователей.<br />
+					Продолжая использовать сайт, вы соглашаетесь с условиями
+					<a href="#"><u>Пользовательского соглашения</u></a>
+				</p>
+				<button class="cookie__button">OK</button>
+			</div>
+		</div>
+		<!-- конец куки -->
+
+		<main>
+			<div class="size__wrapper">
+				<img src="../img/banner_size.jpeg" width="100%" class="size__wrapper-bg" />
+				<div class="size__wrapper-header">
+					<div class="size__orange"></div>
+					<h1>Как правильно выбрать размер обуви</h1>
+				</div>
+				<div class="size__content">
+					<h3>Сравнивайте размер по размерной сетке</h3>
+					<p>
+						В Unicorn представлен большой выбор кроссовок и одежды разных брендов. При покупках онлайн, бывает сложно
+						сделать правильный выбор размера.<br />
+						<br />
+						Для того что бы верно определить размер, советуем смотреть полную размерную сетку, она идет индивидуально к
+						каждой модели обуви.
+					</p>
+					<div class="size__content-block"></div>
+					<div class="size__big-text">
+						<p>
+							Основные размеры на нашем сайте — это EUR (Европейский). Дополнительно, для справки и сравнения в
+							таблицах, пишутся размеры в US/UK/FR/CHN/JP и сантиметрах. Обозначения размеров: EUR — европейский, US —
+							американский, UK — английский, FR — французский, СHN — китайский, JP — японский.<br />
+							<br />
+							<b>Примечание:</b>
+							<br />
+							<br />
+							<b>EUR</b> — на 1 деление обозначается больше русского. Например, если у вас русский 42, значит EUR —
+							43.<br />
+							<br />
+							<b>FR</b> — в основном встречается у Adidas, имеет дольные значения (например 42 2/3). Советуем в обуви
+							Adidas ориентироваться на US/UK или прошлый опыт носки обуви бренда.<br />
+							<br />
+							<b>CHN</b> — очень похожи на значения в сантиметрах, но на самом деле отличаются от обычных сантиметров
+							стельки. Советуем не ориентироваться на китайский размер.<br />
+							<br />
+							<b>US</b> — самое универсальное значения для определения размера в любой обуви, в 97% является самым
+							точным.
 						</p>
-						<button class="cookie__button">OK</button>
 					</div>
+					<h3>Как измерить длину у стельки</h3>
+					<p>
+						Чтобы не ошибиться при выборе кроссовок советуем измерить длину стельки в сантиметрах в обуви, которую вы
+						обычно носите и сравнить с таблицей размеров на сайте.
+					</p>
+					<div class="size__content-block-small"></div>
+					<h3>Большемерит или маломерит обувь на Unicorn?</h3>
+					<p>
+						Вся продукция представленная на нашем сайте идентична той, которую мы привыкли встречать в магазинах в
+						России, Европы или Америки. Это оригинальная продукция, размеры которой не зависят от страны реализации.
+						Обувь большемерит или маломерит только в том случае, если это присуще самой модели. Советуем смотреть обзоры
+						или читать отзывы в интернете, касаемо особенностей размеров той или иной продукции, чтобы быть уверенным в
+						выборе.
+					</p>
+					<h3>Какие бывают размерные ряды и их особенности?</h3>
+					<p>
+						Размерные ряды и таблицы бывают разными в зависимости от моделей. Одни и те же кроссовки могут быть в
+						мужской сетке, женской или детской/подростковой. Мужская сетка и женская отличаются по значениям
+						(US/UK/сантиметрам) в таблице размеров, иногда они прописаны, как M — мужские, W — женские.
+						Подростковые/детские модели обозначаются на Poizon значком “GS” или “BP”. Такие модели отличаются не только
+						маленьким размерным рядом, но и используемыми материалами в производстве, а также посадкой по ноге.
+					</p>
+					<h3 class="size__bottom-text">
+						Помните, что у каждого бренда своя размерная сетка и ваш размер может быть разным!
+					</h3>
 				</div>
-				<!-- конец куки -->
+			</div>
+		</main>
 
-				<main>
-					<div class="size__wrapper">
-						<img src="../img/banner_size.jpeg" width="100%" class="size__wrapper-bg" />
-						<div class="size__wrapper-header">
-							<div class="size__orange"></div>
-							<h1>Как правильно выбрать размер обуви</h1>
-						</div>
-						<div class="size__content">
-							<h3>Сравнивайте размер по размерной сетке</h3>
-							<p>
-								В Unicorn представлен большой выбор кроссовок и одежды разных брендов. При покупках онлайн, бывает
-								сложно сделать правильный выбор размера.<br />
-								<br />
-								Для того что бы верно определить размер, советуем смотреть полную размерную сетку, она идет
-								индивидуально к каждой модели обуви.
-							</p>
-							<div class="size__content-block"></div>
-							<div class="size__big-text">
-								<p>
-									Основные размеры на нашем сайте — это EUR (Европейский). Дополнительно, для справки и сравнения в
-									таблицах, пишутся размеры в US/UK/FR/CHN/JP и сантиметрах. Обозначения размеров: EUR — европейский, US
-									— американский, UK — английский, FR — французский, СHN — китайский, JP — японский.<br />
-									<br />
-									<b>Примечание:</b>
-									<br />
-									<br />
-									<b>EUR</b> — на 1 деление обозначается больше русского. Например, если у вас русский 42, значит EUR —
-									43.<br />
-									<br />
-									<b>FR</b> — в основном встречается у Adidas, имеет дольные значения (например 42 2/3). Советуем в
-									обуви Adidas ориентироваться на US/UK или прошлый опыт носки обуви бренда.<br />
-									<br />
-									<b>CHN</b> — очень похожи на значения в сантиметрах, но на самом деле отличаются от обычных
-									сантиметров стельки. Советуем не ориентироваться на китайский размер.<br />
-									<br />
-									<b>US</b> — самое универсальное значения для определения размера в любой обуви, в 97% является самым
-									точным.
-								</p>
-							</div>
-							<h3>Как измерить длину у стельки</h3>
-							<p>
-								Чтобы не ошибиться при выборе кроссовок советуем измерить длину стельки в сантиметрах в обуви, которую
-								вы обычно носите и сравнить с таблицей размеров на сайте.
-							</p>
-							<div class="size__content-block-small"></div>
-							<h3>Большемерит или маломерит обувь на Unicorn?</h3>
-							<p>
-								Вся продукция представленная на нашем сайте идентична той, которую мы привыкли встречать в магазинах в
-								России, Европы или Америки. Это оригинальная продукция, размеры которой не зависят от страны реализации.
-								Обувь большемерит или маломерит только в том случае, если это присуще самой модели. Советуем смотреть
-								обзоры или читать отзывы в интернете, касаемо особенностей размеров той или иной продукции, чтобы быть
-								уверенным в выборе.
-							</p>
-							<h3>Какие бывают размерные ряды и их особенности?</h3>
-							<p>
-								Размерные ряды и таблицы бывают разными в зависимости от моделей. Одни и те же кроссовки могут быть в
-								мужской сетке, женской или детской/подростковой. Мужская сетка и женская отличаются по значениям
-								(US/UK/сантиметрам) в таблице размеров, иногда они прописаны, как M — мужские, W — женские.
-								Подростковые/детские модели обозначаются на Poizon значком “GS” или “BP”. Такие модели отличаются не
-								только маленьким размерным рядом, но и используемыми материалами в производстве, а также посадкой по
-								ноге.
-							</p>
-							<h3 class="size__bottom-text">
-								Помните, что у каждого бренда своя размерная сетка и ваш размер может быть разным!
-							</h3>
-						</div>
+		<!-- footer для мобильных снизу -->
+		<footer class="footer__bg-mobile">
+			<div class="footer__wrapper">
+				<section class="footer__about-info">
+					<a class="footer__logo">BRANDER</a>
+					<a class="footer__about-button" href="#"
+						><img src="../img/robot.svg" class="footer__about-robot" /><span>Бот Brander</span></a
+					>
+				</section>
+				<nav class="footer__about-nav">
+					<div class="column">
+						<h3 class="footer__about-h">МАГАЗИН</h3>
+						<a class="footer__about-link" href="../pages/shop.html">Магазин<br />в Ростове-на-Дону</a>
+						<a class="footer__about-link" href="#">Оплата</a>
+						<a class="footer__about-link" href="../pages/delivery.html">Доставка</a>
+						<a class="footer__about-link" href="../pages/help.html">Помощь</a>
+						<a class="footer__about-link" href="#">Гарантия и безопасность</a>
+						<a class="footer__about-link" href="../pages/original.html">Проверка на оригинальность</a>
+						<a class="footer__about-link" href="../pages/size.html">Как выбрать размер</a>
 					</div>
-				</main>
-
-				<!-- footer для мобильных снизу -->
-				<footer class="footer__bg-mobile">
-					<div class="footer__wrapper">
-						<section class="footer__about-info">
-							<a class="footer__logo">BRANDER</a>
-							<a class="footer__about-button" href="#"
-								><img src="../img/robot.svg" class="footer__about-robot" /><span>Бот Brander</span></a
-							>
-						</section>
-						<nav class="footer__about-nav">
-							<div class="column">
-								<h3 class="footer__about-h">МАГАЗИН</h3>
-								<a class="footer__about-link" href="../pages/shop.html">Магазин<br />в Ростове-на-Дону</a>
-								<a class="footer__about-link" href="#">Оплата</a>
-								<a class="footer__about-link" href="../pages/delivery.html">Доставка</a>
-								<a class="footer__about-link" href="../pages/help.html">Помощь</a>
-								<a class="footer__about-link" href="#">Гарантия и безопасность</a>
-								<a class="footer__about-link" href="../pages/original.html">Проверка на оригинальность</a>
-								<a class="footer__about-link" href="../pages/size.html">Как выбрать размер</a>
-							</div>
-							<div class="column">
-								<h3 class="footer__about-h">КОМПАНИЯ</h3>
-								<a class="footer__about-link" href="#">Приложение</a>
-								<a class="footer__about-link" href="#">Отзывы</a>
-								<a class="footer__about-link" href="../pages/contacts.html">Контакты</a>
-								<h3 class="footer__about-h footer-margin">КАТАЛОГ</h3>
-								<a class="footer__about-link" href="#">Кроссовки</a>
-								<a class="footer__about-link" href="#">Одежда</a>
-								<a class="footer__about-link" href="#">Аксессуары</a>
-								<a class="footer__about-link" href="#">Все бренды</a>
-							</div>
-						</nav>
+					<div class="column">
+						<h3 class="footer__about-h">КОМПАНИЯ</h3>
+						<a class="footer__about-link" href="#">Приложение</a>
+						<a class="footer__about-link" href="#">Отзывы</a>
+						<a class="footer__about-link" href="../pages/contacts.html">Контакты</a>
+						<h3 class="footer__about-h footer-margin">КАТАЛОГ</h3>
+						<a class="footer__about-link" href="#">Кроссовки</a>
+						<a class="footer__about-link" href="#">Одежда</a>
+						<a class="footer__about-link" href="#">Аксессуары</a>
+						<a class="footer__about-link" href="#">Все бренды</a>
 					</div>
-					<hr class="footer__line" />
-					<section class="footer__social">
-						<p class="footer__social-p">© 2024 ООО “Компания”. Все права защищены</p>
-						<div class="footer__social-links">
-							<a href="#" class="footer__social-link"><img src="../img/telegram_logo.svg" /></a>
-							<a href="#" class="footer__social-link"><img src="../img/insta_logo.svg" /></a>
-						</div>
-					</section>
-				</footer>
-				<!-- footer для пк снизу -->
-				<footer class="footer__bg">
-					<div class="footer__wrapper">
-						<nav class="footer__about-nav">
-							<div class="column">
-								<h3 class="footer__about-h">МАГАЗИН</h3>
-								<a class="footer__about-link" href="../pages/shop.html">Магазин в Ростове-на-Дону</a>
-								<a class="footer__about-link" href="#">Оплата</a>
-								<a class="footer__about-link" href="../pages/delivery.html">Доставка</a>
-								<a class="footer__about-link" href="../pages/help.html">Помощь</a>
-								<a class="footer__about-link" href="#">Гарантия и безопасность</a>
-								<a class="footer__about-link" href="../pages/original.html">Проверка на оригинальность</a>
-								<a class="footer__about-link" href="../pages/size.html">Как выбрать размер</a>
-							</div>
-							<div class="column">
-								<h3 class="footer__about-h">КОМПАНИЯ</h3>
-								<a class="footer__about-link" href="">Приложение</a>
-								<a class="footer__about-link" href="#">Отзывы</a>
-								<a class="footer__about-link" href="../pages/contacts.html">Контакты</a>
-							</div>
-							<div class="column">
-								<h3 class="footer__about-h">КАТАЛОГ</h3>
-								<a class="footer__about-link" href="#">Кроссовки</a>
-								<a class="footer__about-link" href="#">Одежда</a>
-								<a class="footer__about-link" href="#">Аксессуары</a>
-								<a class="footer__about-link" href="#">Все бренды</a>
-							</div>
-						</nav>
-						<section class="footer__about-info">
-							<a class="footer__logo">BRANDER</a>
-							<p class="footer__about-p">
-								Наш бот рассчитает Ваш заказ, расскажет о его статусе и ответит на любые Ваши вопросы:
-							</p>
-							<a class="footer__about-button" href="#"
-								><img src="../img/robot.svg" class="footer__about-robot" /><span>Бот Brander</span></a
-							>
-						</section>
+				</nav>
+			</div>
+			<hr class="footer__line" />
+			<section class="footer__social">
+				<p class="footer__social-p">© 2024 ООО “Компания”. Все права защищены</p>
+				<div class="footer__social-links">
+					<a href="#" class="footer__social-link"><img src="../img/telegram_logo.svg" /></a>
+					<a href="#" class="footer__social-link"><img src="../img/insta_logo.svg" /></a>
+				</div>
+			</section>
+		</footer>
+		<!-- footer для пк снизу -->
+		<footer class="footer__bg">
+			<div class="footer__wrapper">
+				<nav class="footer__about-nav">
+					<div class="column">
+						<h3 class="footer__about-h">МАГАЗИН</h3>
+						<a class="footer__about-link" href="../pages/shop.html">Магазин в Ростове-на-Дону</a>
+						<a class="footer__about-link" href="#">Оплата</a>
+						<a class="footer__about-link" href="../pages/delivery.html">Доставка</a>
+						<a class="footer__about-link" href="../pages/help.html">Помощь</a>
+						<a class="footer__about-link" href="#">Гарантия и безопасность</a>
+						<a class="footer__about-link" href="../pages/original.html">Проверка на оригинальность</a>
+						<a class="footer__about-link" href="../pages/size.html">Как выбрать размер</a>
 					</div>
-					<hr class="footer__line" />
-					<section class="footer__social">
-						<p class="footer__social-p">© 2024 ООО “Компания”. Все права защищены</p>
-						<div class="footer__social-links">
-							<a href="#" class="footer__social-link"><img src="../img/telegram_logo.svg" /></a>
-							<a href="#" class="footer__social-link"><img src="../img/insta_logo.svg" /></a>
-						</div>
-					</section>
-				</footer>
-			</body>
-		</html>
+					<div class="column">
+						<h3 class="footer__about-h">КОМПАНИЯ</h3>
+						<a class="footer__about-link" href="">Приложение</a>
+						<a class="footer__about-link" href="#">Отзывы</a>
+						<a class="footer__about-link" href="../pages/contacts.html">Контакты</a>
+					</div>
+					<div class="column">
+						<h3 class="footer__about-h">КАТАЛОГ</h3>
+						<a class="footer__about-link" href="#">Кроссовки</a>
+						<a class="footer__about-link" href="#">Одежда</a>
+						<a class="footer__about-link" href="#">Аксессуары</a>
+						<a class="footer__about-link" href="#">Все бренды</a>
+					</div>
+				</nav>
+				<section class="footer__about-info">
+					<a class="footer__logo">BRANDER</a>
+					<p class="footer__about-p">
+						Наш бот рассчитает Ваш заказ, расскажет о его статусе и ответит на любые Ваши вопросы:
+					</p>
+					<a class="footer__about-button" href="#"
+						><img src="../img/robot.svg" class="footer__about-robot" /><span>Бот Brander</span></a
+					>
+				</section>
+			</div>
+			<hr class="footer__line" />
+			<section class="footer__social">
+				<p class="footer__social-p">© 2024 ООО “Компания”. Все права защищены</p>
+				<div class="footer__social-links">
+					<a href="#" class="footer__social-link"><img src="../img/telegram_logo.svg" /></a>
+					<a href="#" class="footer__social-link"><img src="../img/insta_logo.svg" /></a>
+				</div>
+			</section>
+		</footer>
 	</body>
 </html>
