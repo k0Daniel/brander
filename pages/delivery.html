@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles.css" />
+		<script src="../script.js" defer></script>
+		<title>Доставка</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="wrapper header__wrapper">
+				<div class="burger-menu">
+					<input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+					<label for="burger-checkbox" class="burger"></label>
+
+					<!-- блок навигации -->
+					<nav class="menu">
+						<div class="menu-column">
+							<h3>КАТЕГОРИИ</h3>
+							<ul class="menu-list">
+								<li>
+									<details>
+										<summary>Товары в наличии</summary>
+										<ul>
+											<li><a href="#">Кроссовки</a></li>
+											<li><a href="#">Одежда</a></li>
+											<li><a href="#">Обувь</a></li>
+											<li><a href="#">Аксессуары</a></li>
+										</ul>
+									</details>
+								</li>
+								<li>
+									<details><summary>Повседневная обувь</summary></details>
+								</li>
+								<li>
+									<details><summary>Обувь для спорта</summary></details>
+								</li>
+								<li>
+									<details><summary>Другая категория</summary></details>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-column">
+							<h3>ПОПУЛЯРНЫЕ БРЕНДЫ</h3>
+							<ul class="menu-list">
+								<li>
+									<details><summary>Air Jordan</summary></details>
+								</li>
+								<li>
+									<details><summary>Nike</summary></details>
+								</li>
+								<li>
+									<details><summary>New Balance</summary></details>
+								</li>
+								<li>
+									<details><summary>Другой пункт</summary></details>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-column">
+							<h3>ПОКУПАТЕЛЯМ</h3>
+							<ul class="menu-list">
+								<li><a style="margin: 0 0 22px 0" href="#">Приложение</a></li>
+								<li><a style="margin: 0 0 22px 0" href="#">Оплата</a></li>
+								<li><a style="margin: 0 0 22px 0" href="../pages/delivery.html">Доставка</a></li>
+								<li><a style="margin: 0 0 22px 0" href="#">Другой пункт</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<!-- конец блока навигации -->
+				<a class="header__logo">BRANDER</a>
+				<div class="header__rc">
+					<button id="searchbox" class="header__searchbox">
+						<img src="../img/search.svg" />
+					</button>
+					<a href="#" class="header__fav"><img src="../img/favorite.svg" /></a>
+					<a href="#" class="header__a header__auth" id="auth">
+						<img src="../img/user.svg" alt="user ico" />
+						<p>Войти</p>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<a href="#" id="button_up"><img src="../img/button_up.svg" alt="arrow up" /></a>
+
+		<!-- блок поиска -->
+		<div class="searchbox-bigbg" hidden>
+			<div class="searchbox-big">
+				<form class="searchbox-form">
+					<div>
+						<img src="../img/Bounding box.svg" class="searchbox-arrow" />
+						<img src="../img/search_icon.svg" alt="search" class="search-icon" />
+						<input id="search__input" placeholder="Напишите что-нибудь..." type="search" />
+					</div>
+					<input id="search__submit" value="Найти" type="submit" />
+				</form>
+				<div class="searchbox__wrapper">
+					<div class="searchbox__popular-names">
+						<p class="searchbox-p">Часто ищут</p>
+						<ul>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>nike</a
+								>
+							</li>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>new balance</a
+								>
+							</li>
+							<li class="searchbox-list">
+								<img class="searchbox-magnifier" src="../img/search_icon.svg" alt="search" /><a
+									class="searchbox-list-a"
+									href="#"
+									>adidas</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="searchbox__popular-items">
+						<p class="searchbox-p">Популярные товары</p>
+						<div class="searchbox__popular-cards">
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+							<div class="searchbox__popular-sneaker">
+								<a href="#" class="searchbox__popular-content">
+									<img src="../img/sneaker1.png" class="searchbox__popular-img" />
+									<p class="searchbox__popular-p">New Balance NB 530 D</p>
+									<h3 class="searchbox__popular-name"><b>12 914 ₽</b></h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="searchbox__close-button"><img src="../img/button_close.svg" /></button>
+		</div>
+		<!-- конец блока поиска -->
+		<!-- блок авторизации -->
+		<div class="auth__wrapper" hidden>
+			<div class="auth__bg">
+				<form class="auth__form">
+					<p class="auth__head">Войти или создать профиль</p>
+					<p class="auth__desc">Телефон</p>
+					<input id="phoneNum" type="tel" placeholder="+7 (999) 999-99-99" />
+					<input id="phoneSubmit" type="submit" value="Продолжить" />
+					<img class="arrow_forward" src="../img/arrow_forward_ios.svg" />
+				</form>
+			</div>
+			<button id="auth__close-button"><img src="../img/button_close.svg" /></button>
+		</div>
+		<!-- конец блока авторизации  -->
+		<!-- куки -->
+		<div class="cookie__wrapper">
+			<div class="cookie__modal-wrapper">
+				<p class="cookie__text">
+					Мы используем cookies для улучшения нашего сайта и его персонализации для пользователей.<br />
+					Продолжая использовать сайт, вы соглашаетесь с условиями
+					<a href="#"><u>Пользовательского соглашения</u></a>
+				</p>
+				<button class="cookie__button">OK</button>
+			</div>
+		</div>
+		<!-- конец куки -->
+
+		<main>
+			<img src="../img/banner_delivery.jpeg" class="delivery__wrapper-bg" />
+			<div class="delivery__container-text">
+				<h3>Сколько занимает доставка из Unicorn</h3>
+				<p>
+					Среднее время доставки товара от момента покупки до его получения в нашем магазине в Москве: 
+                    <br><br>
+                   <ul style="margin-left: 30px;">
+                    <li style="list-style-type: disc;">9-12 дней. - экспресс доставка самолетом</li>
+                     <li style="list-style-type: disc;">20-25 дней. - обычная доставка наземным транспортом</li>
+                   </ul>
+                    <br>
+                    <p>Вы можете забрать свой заказ в Москве или мы доставим курьером или в пункт самовывоза СДЭК в любом городе России.</p>
+				</p>
+                <h3>Как работает доставка Unicorn</h3>
+                <p>После оформления заказа и оплаты вы сможете выбрать способ доставки и указать данные получателя. </p>
+                <h3>На выбор вам будет предоставлено 3 способа доставки</h3>
+                <ol>
+                    <li style="list-style-type: inherit;"><b>Самовывоз СДЭК из ПВЗ.</b> Вы сможете оформить доставку до ближайшего в вашем городе пункта выдачи СДЭК. В приложении вы сможете заполнить данные получателя и выбрать из списка ваш Город и Пункт выдачи.</li>
+                    <br>
+                    <li style="list-style-type: inherit;"><b>Доставка курьером СДЭК.</b> Вы можете оформить доставку до вашей квартиры курьером. В приложении вы также заполняете свои данные, выбираете город и указываете полный адрес доставки.</li>
+                    <br>
+                        <li style="list-style-type: inherit;"><b>Забрать из магазина в Москве.</b> Если вы живете в Москве и хотите забрать заказ самовывозом, то сделать это вы можете приехав к нам в магазин, который находится по адресу проспект Мира 188б корпус 3 (метро ВДНХ). В приложении вы также можете заполнить данные получателя и указать комментарий, если хотите сообщить нам  какую-то информацию.</li>
+                </ol>
+                <h3>Отслеживание заказа</h3>
+                <p>После того как вы совершили покупку и заполнили данные доставки, вы сможете отслеживать статусы вашего заказа в приложении, а также вам будут приходить уведомления после каждого изменения статуса.</p>
+                <h2>FAQ</h2>
+                <div class="delivery__FAQ-underline"></div>
+                <h3>А можно доставить быстрее?</h3>
+                <p>Да, у нас есть услуга экспресс доставки. Время доставки занимает 9-12 дней. Стоимость такой услуги +3500р. к общей стоимости заказа. Для того чтобы оформить экспресс доставку перед оплатой нажмите внизу экрана на карточке заказа кнопку "отправить закзаз в чат оператору" и попросите сделать расчет с экспресс-доставкой. Оператор перерасчитает стоимость заказа и можно будет производить оплату.</p>
+           <h3>На кого я могу оформить покупку?</h3>
+           <p>Оформление заказа вы можете делать как на себя, так и на другого человека. Например если хотите сделать кому-то подарок или занимаетесь перепродажей кроссовок, то вы сразу можете оформить доставку до адреса вашего покупателя.</p>
+           <h3>Если у меня нет СДЭК, могу оформить Почту России?</h3>
+           <p>Да, вы можете оформить доставку почтой России. Дл этого вам нужно выбрать способ доставки "забрать из магазина в Москве" и в комментарии написать "Отправить Почтой России + указать все данные (адрес, фио получателя, индекс и номер телефона)"</p>
+        <h3>Доставка по России оплачивается дополнительно?</h3>
+        <p>Да, доставка из Москвы до вашего города оплачивается при получении. Средняя стоимость доставки составляет порядка 250-400р. Дальние регионы, которые находятся за Уралом (Новосибирск, Омск, Южно-Сахалинск и пр.) будут стоить немного дороже - порядка 700-900 рублей.</p>
+       <h3>Как мне оформить доставку до Белоруссии или Казахстана?</h3>
+       <p>Для этого вам необходимо связаться с нашими менеджерами через телеграм аккаунт @zakaz_poizon и запросить доставку до вашего города в другой стране. Оформление такой доставки будет происходить вручную.</p>
+    </div>
+		</main>
+
+		<!-- footer для мобильных снизу -->
+		<footer class="footer__bg-mobile">
+			<div class="footer__wrapper">
+				<section class="footer__about-info">
+					<a class="footer__logo">BRANDER</a>
+					<a class="footer__about-button" href="#"
+						><img src="../img/robot.svg" class="footer__about-robot" /><span>Бот Brander</span></a
+					>
+				</section>
+				<nav class="footer__about-nav">
+					<div class="column">
+						<h3 class="footer__about-h">МАГАЗИН</h3>
+						<a class="footer__about-link" href="../pages/shop.html">Магазин<br />в Ростове-на-Дону</a>
+						<a class="footer__about-link" href="#">Оплата</a>
+						<a class="footer__about-link" href="../pages/delivery.html">Доставка</a>
+						<a class="footer__about-link" href="../pages/help.html">Помощь</a>
+						<a class="footer__about-link" href="#">Гарантия и безопасность</a>
+						<a class="footer__about-link" href="../pages/original.html">Проверка на оригинальность</a>
+						<a class="footer__about-link" href="../pages/size.html">Как выбрать размер</a>
+					</div>
+					<div class="column">
+						<h3 class="footer__about-h">КОМПАНИЯ</h3>
+						<a class="footer__about-link" href="#">Приложение</a>
+						<a class="footer__about-link" href="#">Отзывы</a>
+						<a class="footer__about-link" href="../pages/contacts.html">Контакты</a>
+						<h3 class="footer__about-h footer-margin">КАТАЛОГ</h3>
+						<a class="footer__about-link" href="#">Кроссовки</a>
+						<a class="footer__about-link" href="#">Одежда</a>
+						<a class="footer__about-link" href="#">Аксессуары</a>
+						<a class="footer__about-link" href="#">Все бренды</a>
+					</div>
+				</nav>
+			</div>
+			<hr class="footer__line" />
+			<section class="footer__social">
+				<p class="footer__social-p">© 2024 ООО “Компания”. Все права защищены</p>
+				<div class="footer__social-links">
+					<a href="#" class="footer__social-link"><img src="../img/telegram_logo.svg" /></a>
+					<a href="#" class="footer__social-link"><img src="../img/insta_logo.svg" /></a>
+				</div>
+			</section>
+		</footer>
+		<!-- footer для пк снизу -->
+		<footer class="footer__bg">
+			<div class="footer__wrapper">
+				<nav class="footer__about-nav">
+					<div class="column">
+						<h3 class="footer__about-h">МАГАЗИН</h3>
+						<a class="footer__about-link" href="../pages/shop.html">Магазин в Ростове-на-Дону</a>
+						<a class="footer__about-link" href="#">Оплата</a>
+						<a class="footer__about-link" href="../pages/delivery.html">Доставка</a>
+						<a class="footer__about-link" href="../pages/help.html">Помощь</a>
+						<a class="footer__about-link" href="#">Гарантия и безопасность</a>
+						<a class="footer__about-link" href="../pages/original.html">Проверка на оригинальность</a>
+						<a class="footer__about-link" href="../pages/size.html">Как выбрать размер</a>
+					</div>
+					<div class="column">
+						<h3 class="footer__about-h">КОМПАНИЯ</h3>
+						<a class="footer__about-link" href="">Приложение</a>
+						<a class="footer__about-link" href="#">Отзывы</a>
+						<a class="footer__about-link" href="../pages/contacts.html">Контакты</a>
+					</div>
+					<div class="column">
+						<h3 class="footer__about-h">КАТАЛОГ</h3>
+						<a class="footer__about-link" href="#">Кроссовки</a>
+						<a class="footer__about-link" href="#">Одежда</a>
+						<a class="footer__about-link" href="#">Аксессуары</a>
+						<a class="footer__about-link" href="#">Все бренды</a>
+					</div>
+				</nav>
+				<section class="footer__about-info">
+					<a class="footer__logo">BRANDER</a>
+					<p class="footer__about-p">
+						Наш бот рассчитает Ваш заказ, расскажет о его статусе и ответит на любые Ваши вопросы:
+					</p>
+					<a class="footer__about-button" href="#"
+						><img src="../img/robot.svg" class="footer__about-robot" /><span>Бот Brander</span></a
+					>
+				</section>
+			</div>
+			<hr class="footer__line" />
+			<section class="footer__social">
+				<p class="footer__social-p">© 2024 ООО “Компания”. Все права защищены</p>
+				<div class="footer__social-links">
+					<a href="#" class="footer__social-link"><img src="../img/telegram_logo.svg" /></a>
+					<a href="#" class="footer__social-link"><img src="../img/insta_logo.svg" /></a>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
