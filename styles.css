@@ -2823,3 +2823,25 @@ li {
 		margin-bottom: 4px;
 	}
 }
+/* shop */
+.shop__content-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 244px auto 0 auto;
+	max-width: 1133px;
+}
+.shop__content-wrapper h2 {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 36px;
+	font-weight: 700;
+	margin: 20px 0 25px 0;
+}
+.shop__content-wrapper p,
+li {
+	color: rgb(0, 0, 0);
+	font-family: Golos;
+	font-size: 24px;
+	font-weight: 400;
+}
