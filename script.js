@@ -192,3 +192,56 @@ for (i = 0; i < acc.length; i++) {
 		}
 	});
 }
+
+document.querySelector('.product__description-more-btn').addEventListener('click', function () {
+	const dots = document.querySelector('.product__description-dots');
+	const moreText = document.querySelector('.product__description-more');
+	const btnText = document.querySelector('.product__description-more-btn');
+
+	if (dots.style.display === 'none') {
+		dots.style.display = 'inline';
+		btnText.textContent = 'Развернуть описание';
+		moreText.style.display = 'none';
+	} else {
+		dots.style.display = 'none';
+		btnText.textContent = 'Свернуть';
+		moreText.style.display = 'inline';
+	}
+});
+
+document.querySelectorAll('.size-btn').forEach(button => {
+	button.addEventListener('click', function () {
+		document.querySelectorAll('.size-btn').forEach(btn => {
+			btn.classList.remove('selected');
+		});
+
+		this.classList.add('selected');
+
+		console.log('Выбран размер:', this.textContent);
+	});
+});
+
+document.querySelectorAll('.product__delivery-option').forEach(option => {
+	option.addEventListener('click', function () {
+		document.querySelectorAll('.product__delivery-option').forEach(opt => {
+			opt.classList.remove('selected');
+		});
+
+		this.classList.add('selected');
+	});
+});
+
+     document.addEventListener('DOMContentLoaded', function () {
+				const likeButtons = document.querySelectorAll('.product__recommendation-card-like');
+
+				likeButtons.forEach(button => {
+					button.addEventListener('click', function () {
+						const img = this.querySelector('img');
+						if (img.src.includes('favorite.svg')) {
+							img.src = '../img/black_heart.svg';
+						} else {
+							img.src = '../img/favorite.svg';
+						}
+					});
+				});
+			});
