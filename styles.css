@@ -26,6 +26,7 @@
 }
 * {
 	margin: 0;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 li {
@@ -102,19 +103,33 @@ body {
 
 .burger::after {
 	bottom: 0;
+	-webkit-transition: bottom 0.3s 0.15s, -webkit-transform 0.3s;
+	-moz-transition: bottom 0.3s 0.15s, -moz-transform 0.3s;
+	-o-transition: bottom 0.3s 0.15s, -o-transform 0.3s;
 	transition: bottom 0.3s 0.15s, transform 0.3s;
 }
 
 .burger-checkbox:checked + .burger::before {
 	top: 11px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
+	-webkit-transition: -webkit-transform 0.3s 0.15s;
+	transition: -webkit-transform 0.3s 0.15s;
+	-o-transition: transform 0.3s 0.15s;
 	transition: transform 0.3s 0.15s;
+	transition: transform 0.3s 0.15s, -webkit-transform 0.3s 0.15s;
 }
 
 .burger-checkbox:checked + .burger::after {
 	bottom: 11px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	transition: bottom 0.3s, transform 0.3s 0.15s;
+	-webkit-transition: bottom 0.3s, -webkit-transform 0.3s 0.15s;
+	-moz-transition: bottom 0.3s, -moz-transform 0.3s 0.15s;
+	-o-transition: bottom 0.3s, -o-transform 0.3s 0.15s;
+	transition: bottom 0.3s, transform 0.3s 0.15s, -webkit-transform 0.3s 0.15s;
 }
 
 .menu {
@@ -125,14 +140,22 @@ body {
 	height: 100%;
 	background: white;
 	display: flex;
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
 	transform: translateX(-100%);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: transform 0.3s;
 	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
 	overflow-y: auto;
 	padding: 99px 0 0 145px;
 	z-index: 5;
 }
 
 .burger-checkbox:checked ~ .menu {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
 	transform: translateX(0);
 }
 
@@ -145,7 +168,7 @@ body {
 .menu-column h3 {
 	margin-bottom: 35px;
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 27px;
 	font-weight: 600;
 	pointer-events: none;
@@ -161,7 +184,7 @@ body {
 .menu-list a {
 	margin-left: 77px;
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 500;
 }
@@ -174,7 +197,7 @@ details summary {
 	display: flex;
 	align-items: center;
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 500;
 	margin-bottom: 22px;
@@ -203,13 +226,17 @@ details[open] summary::before {
 }
 details li {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 }
 .header__wrapper {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -226,7 +253,7 @@ details li {
 }
 .header__logo {
 	color: rgb(21, 21, 21);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 600;
 	pointer-events: none;
@@ -258,7 +285,7 @@ details li {
 	border: 2px solid black;
 	border-radius: 7px;
 	color: rgb(21, 21, 21);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 }
@@ -314,7 +341,7 @@ details li {
 }
 .main__note {
 	color: rgb(90, 90, 90);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	margin-bottom: 47px;
@@ -334,12 +361,16 @@ details li {
 	line-height: 140%;
 	letter-spacing: -0.5px;
 	border: none;
+	background: -webkit-linear-gradient(45deg, rgba(191, 108, 34, 1) 0%, rgba(182, 30, 46, 1) 85%);
+	background: -o-linear-gradient(45deg, rgba(191, 108, 34, 1) 0%, rgba(182, 30, 46, 1) 85%);
 	background: linear-gradient(45deg, rgba(191, 108, 34, 1) 0%, rgba(182, 30, 46, 1) 85%);
 	color: white;
 	text-decoration: none;
 	margin-top: 30px;
 }
 .main__button:hover {
+	background: -webkit-linear-gradient(46.66deg, rgb(182, 30, 46) 25.832%, rgb(191, 108, 34) 105.711%);
+	background: -o-linear-gradient(46.66deg, rgb(182, 30, 46) 25.832%, rgb(191, 108, 34) 105.711%);
 	background: linear-gradient(46.66deg, rgb(182, 30, 46) 25.832%, rgb(191, 108, 34) 105.711%);
 }
 .main__wrapper {
@@ -400,7 +431,7 @@ details li {
 }
 .footer__about-h {
 	color: rgb(227, 227, 227);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 26px;
 	font-weight: 600;
 	margin: 0 0 26px 0;
@@ -409,7 +440,7 @@ details li {
 .footer__about-link {
 	text-decoration: none;
 	color: rgb(227, 227, 227);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	padding-top: 15px;
@@ -429,7 +460,7 @@ details li {
 
 .footer__logo {
 	color: rgb(227, 227, 227);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 55px;
 	font-weight: 600;
 	pointer-events: none;
@@ -441,7 +472,7 @@ details li {
 	border-radius: 7px;
 	background-color: rgb(21, 21, 21);
 	color: rgb(227, 227, 227);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 	padding: 13px 29px 16px 26px;
@@ -457,7 +488,7 @@ details li {
 }
 .footer__about-p {
 	color: rgb(227, 227, 227);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	margin: 48px 0 21px 0;
@@ -478,7 +509,7 @@ details li {
 }
 .footer__social-p {
 	color: rgb(227, 227, 227);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	margin: 0;
@@ -517,7 +548,7 @@ details li {
 	border: 1px solid rgb(21, 21, 21);
 	border-radius: 10px;
 	color: rgb(178, 178, 178);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 400;
 	margin: 0 13px 0 67px;
@@ -530,7 +561,7 @@ details li {
 	width: 176px;
 	height: 53px;
 	color: rgb(255, 255, 255);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 600;
 	margin: 0 96px 0 0;
@@ -550,14 +581,14 @@ details li {
 }
 .searchbox-p {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 27px;
 	font-weight: 600;
 	margin-bottom: 23px;
 }
 .searchbox-list {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 400;
 	align-items: center;
@@ -591,14 +622,14 @@ details li {
 
 .searchbox__popular-p {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	margin: 19px 0 5px 0;
 }
 .searchbox__popular-name {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 }
@@ -623,28 +654,30 @@ details li {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	backdrop-filter: blur(5px);
 	background: rgba(71, 71, 71, 0.5);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
 	z-index: 5;
 }
 .auth__bg {
 	width: 535px;
 	height: 375px;
 	border-radius: 10px;
+	background: #ffffff;
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
-	background: rgb(255, 255, 255);
 	margin: 332px auto 0 auto;
 }
 
 .auth__head {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 27px;
 	font-weight: 600;
 }
 .auth__desc {
 	color: rgb(85, 85, 85);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	margin: 30px 0 15px 0;
@@ -664,7 +697,7 @@ details li {
 	width: 400px;
 	height: 57px;
 	color: rgb(178, 178, 178);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 400;
 	padding-left: 26.5px;
@@ -675,7 +708,7 @@ details li {
 	border-radius: 10px;
 	background: rgb(21, 21, 21);
 	color: rgb(255, 255, 255);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 600;
 	margin-top: 15px;
@@ -695,7 +728,7 @@ details li {
 	border: 0;
 	width: 20.2px;
 	height: 20px;
-	right: 657px;
+	right: 25%;
 	top: 340px;
 	cursor: pointer;
 }
@@ -721,7 +754,7 @@ details li {
 }
 .cookie__text {
 	color: rgb(21, 21, 21);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	padding: 35px 45px 0 45px;
@@ -732,7 +765,7 @@ details li {
 	background: rgb(21, 21, 21);
 	height: 45px;
 	color: rgb(255, 255, 255);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 600;
 	padding: 10px 41px 11px 44px;
@@ -740,9 +773,6 @@ details li {
 	margin: 28px auto 0 auto;
 	cursor: pointer;
 }
-/* * {
-	outline: 1px solid aqua;
-} */
 @media screen and (max-width: 1844px) and (min-width: 1693px) {
 	.main__h1 {
 		font-size: 53px;
@@ -820,6 +850,8 @@ details li {
 		height: 300px;
 		position: absolute;
 		right: 80px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 	.main__wrapper-sneaker {
@@ -877,6 +909,8 @@ details li {
 		height: 30%;
 		position: absolute;
 		left: 700px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 	.main__wrapper-sneaker {
@@ -1274,6 +1308,9 @@ details li {
 .option {
 	padding: 7px 46px 8px 50px;
 	cursor: pointer;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	-moz-transition: background-color 0.3s, color 0.3s;
+	-o-transition: background-color 0.3s, color 0.3s;
 	transition: background-color 0.3s, color 0.3s;
 }
 
@@ -1289,14 +1326,14 @@ details li {
 
 .option:first-child {
 	border-radius: 7px 0 0 7px;
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 600;
 }
 
 .option:last-child {
 	border-radius: 0 7px 7px 0;
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 600;
 }
@@ -1313,7 +1350,7 @@ details li {
 	border-radius: 5px;
 	background: rgb(233, 233, 233);
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 600;
 	padding: 4px 22px;
@@ -1337,7 +1374,7 @@ details li {
 }
 .grid-item a {
 	color: rgb(255, 255, 255);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -1495,7 +1532,7 @@ details li {
 	}
 	.main__h1 {
 		color: rgb(21, 21, 21);
-		font-family: Golos;
+		font-family: 'Golos Text', Arial, sans-serif;
 		font-size: 24px;
 		font-weight: 700;
 		max-width: 344px;
@@ -1505,7 +1542,7 @@ details li {
 	}
 	.main__desc {
 		color: rgb(39, 39, 39);
-		font-family: Golos;
+		font-family: 'Golos Text', Arial, sans-serif;
 		font-size: 14px;
 		font-weight: 500;
 		max-width: 300px;
@@ -1513,7 +1550,7 @@ details li {
 	}
 	.main__note {
 		color: rgb(90, 90, 90);
-		font-family: Golos;
+		font-family: 'Golos Text', Arial, sans-serif;
 		font-size: 12px;
 		font-weight: 400;
 		max-width: 300px;
@@ -1612,12 +1649,6 @@ details li {
 	}
 	.auth__form {
 		padding: 24px 0 0 39px;
-	}
-	.auth__close-button {
-		display: none;
-	}
-	.auth__close-button img {
-		display: none;
 	}
 	.cookie__modal-wrapper {
 		width: 340px;
@@ -1805,7 +1836,7 @@ details li {
 	}
 	.main__h1 {
 		color: rgb(21, 21, 21);
-		font-family: Golos;
+		font-family: 'Golos Text', Arial, sans-serif;
 		font-size: 24px;
 		font-weight: 700;
 		max-width: 344px;
@@ -1815,7 +1846,7 @@ details li {
 	}
 	.main__desc {
 		color: rgb(39, 39, 39);
-		font-family: Golos;
+		font-family: 'Golos Text', Arial, sans-serif;
 		font-size: 14px;
 		font-weight: 500;
 		max-width: 300px;
@@ -1823,7 +1854,7 @@ details li {
 	}
 	.main__note {
 		color: rgb(90, 90, 90);
-		font-family: Golos;
+		font-family: 'Golos Text', Arial, sans-serif;
 		font-size: 12px;
 		font-weight: 400;
 		max-width: 300px;
@@ -2008,7 +2039,7 @@ details li {
 }
 .notfound__header {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 500;
 	margin: 75px 0 27px 0;
@@ -2030,7 +2061,7 @@ details li {
 	width: 85%;
 	height: 53px;
 	color: rgb(178, 178, 178);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 400;
 	margin-right: 13px;
@@ -2039,21 +2070,21 @@ details li {
 	border-radius: 10px;
 	background: rgb(21, 21, 21);
 	color: rgb(255, 255, 255);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 600;
 	padding: 13px 54px;
 }
 .notfound__go-main {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 32px;
 	font-weight: 400;
 	margin: 40px 0 50px 0;
 }
 .notfound__recomendation {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 500;
 	margin-bottom: 50px;
@@ -2067,14 +2098,14 @@ details li {
 }
 .notfound__recomendation-p {
 	color: rgb(144, 144, 144);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	margin-bottom: 10px;
 }
 .notfound__recomendation-name {
 	color: rgb(21, 21, 21);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 }
@@ -2200,7 +2231,7 @@ details li {
 }
 .help__FAQ h2 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	margin: 27px 0 10px 0;
@@ -2224,7 +2255,7 @@ details li {
 	text-align: left;
 	outline: none;
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	position: relative;
@@ -2233,10 +2264,15 @@ details li {
 	align-items: center;
 }
 .accordion img {
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	-o-transition: -o-transform 0.3s;
 	transition: transform 0.3s;
 	margin-left: auto;
 }
 .active img {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
 .panel {
@@ -2245,7 +2281,7 @@ details li {
 	background-color: white;
 	overflow: hidden;
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 }
@@ -2264,12 +2300,12 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .help__form h3 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 }
 .help__form p {
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 32px;
 	font-weight: 400;
 	margin: 40px 0 25px 0;
@@ -2284,7 +2320,7 @@ input[type='number']::-webkit-outer-spin-button {
 	border: 1px solid rgb(183, 183, 183);
 	border-radius: 7px;
 	color: rgb(201, 201, 201);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 32px;
 	font-weight: 400;
 	padding: 27px 0 26px 38px;
@@ -2293,7 +2329,7 @@ input[type='number']::-webkit-outer-spin-button {
 	height: 337px;
 	padding: 27px 0 240px 38px;
 	color: rgb(201, 201, 201);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 32px;
 	font-weight: 400;
 	box-sizing: border-box;
@@ -2304,7 +2340,7 @@ input[type='number']::-webkit-outer-spin-button {
 	border-radius: 7px;
 	background: rgb(21, 21, 21);
 	color: rgb(255, 255, 255);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 32px;
 	font-weight: 500;
 	margin-top: 44px;
@@ -2506,14 +2542,14 @@ input[type='number']::-webkit-outer-spin-button {
 .size__content h3 {
 	margin-top: 55px;
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 700;
 }
 .size__content p {
 	margin-top: 25px;
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 }
@@ -2587,7 +2623,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .original__container-text p {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 }
@@ -2674,7 +2710,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .delivery__container-text h3 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 700;
 	margin: 52px 0 25px 0;
@@ -2682,13 +2718,13 @@ input[type='number']::-webkit-outer-spin-button {
 .delivery__container-text p,
 li {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 }
 .delivery__container-text h2 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	margin: 56px 0 10px 0;
@@ -2801,7 +2837,7 @@ li {
 }
 .shop__content-wrapper h2 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 700;
 	margin: 20px 0 25px 0;
@@ -2809,7 +2845,7 @@ li {
 .shop__content-wrapper p,
 li {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 }
@@ -2861,20 +2897,20 @@ li {
 }
 .contacts__content h3 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 700;
 	margin-bottom: 7px;
 }
 .contacts__content p {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	padding: 28.5px 0;
 }
 .contacts__content a {
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	color: rgb(1, 131, 204);
@@ -2987,32 +3023,32 @@ li {
 }
 .product__nav {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 }
 .product__wrapper-description h1 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	margin: 25px 0 28px 0;
 }
 .product__description p {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 }
 .product__description-dots {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 }
 .product__description-more-btn {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	text-decoration-line: underline;
@@ -3022,23 +3058,28 @@ li {
 }
 .product__wrapper-description h3 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 700;
 }
 .product__size-choice {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	gap: 15px;
 	margin: 28px 0 25px 0;
 }
+
 .size-btn {
 	box-sizing: border-box;
-	border: 1px solid rgb(177, 177, 177);
+	border: 1px solid #b1b1b1;
 	border-radius: 7px;
-	background: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-	font-family: Golos;
+	background: #fff;
+	color: #000;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	width: 85px;
@@ -3046,14 +3087,15 @@ li {
 	height: 50px;
 	cursor: pointer;
 }
+
 .size-btn.selected {
-	background-color: black;
-	color: white;
-	transition: ease-in 0.3s;
+	background-color: #000;
+	color: #fff;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 .product__link-table {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	text-decoration-line: underline;
@@ -3069,7 +3111,7 @@ li {
 }
 
 .product__delivery-option {
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	display: flex;
@@ -3084,10 +3126,10 @@ li {
 	background-color: rgb(21, 21, 21);
 	border: 1px solid rgb(21, 21, 21);
 	color: rgb(255, 255, 255);
-	transition: ease-in 0.3s;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in, border-color 0.3s ease-in;
 }
 .product__delivery-info p {
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -3095,7 +3137,7 @@ li {
 	max-width: 670px;
 }
 .product__original-price {
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	text-decoration-line: line-through;
@@ -3120,13 +3162,13 @@ li {
 }
 
 .product__delivery-additional-info-text h3 {
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 }
 
 .product__delivery-additional-info-text p {
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -3139,7 +3181,7 @@ li {
 }
 .product__help p {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 }
@@ -3151,7 +3193,7 @@ li {
 }
 .product__help button {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	box-sizing: border-box;
@@ -3171,7 +3213,7 @@ li {
 }
 .product__recommendation h2 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 36px;
 	font-weight: 700;
 	margin-bottom: 60px;
@@ -3192,13 +3234,13 @@ li {
 }
 .product__recommendation-card p {
 	color: rgb(21, 21, 21);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 }
 .product__recommendation-card h3 {
 	color: rgb(21, 21, 21);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -3220,6 +3262,7 @@ li {
 .product__recommendation-card-like img {
 	width: 24px;
 	height: 24px;
+	-webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3));
 	filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3));
 }
 
@@ -3230,7 +3273,7 @@ li {
 	border: 2px solid rgb(21, 21, 21);
 	border-radius: 7px;
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	padding: 22px 62px 24px 62px;
@@ -3250,14 +3293,14 @@ li {
 }
 .favorites__wrapper-empty h1 {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 48px;
 	font-weight: 700;
 	margin: 23px 0 25px 0;
 }
 .favorites__wrapper-empty p {
 	color: rgb(0, 0, 0);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	text-align: center;
@@ -3325,13 +3368,13 @@ li {
 }
 .favorites__wrapper-card p {
 	color: rgb(21, 21, 21);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 }
 .favorites__wrapper-card h3 {
 	color: rgb(21, 21, 21);
-	font-family: Golos;
+	font-family: 'Golos Text', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 }
