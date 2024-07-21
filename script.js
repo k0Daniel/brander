@@ -231,17 +231,17 @@ document.querySelectorAll('.product__delivery-option').forEach(option => {
 	});
 });
 
-     document.addEventListener('DOMContentLoaded', function () {
-				const likeButtons = document.querySelectorAll('.product__recommendation-card-like');
+document.addEventListener('DOMContentLoaded', function () {
+	const likeButtons = document.querySelectorAll('.product__recommendation-card-like');
 
-				likeButtons.forEach(button => {
-					button.addEventListener('click', function () {
-						const img = this.querySelector('img');
-						if (img.src.includes('favorite.svg')) {
-							img.src = '../img/black_heart.svg';
-						} else {
-							img.src = '../img/favorite.svg';
-						}
-					});
-				});
-			});
+	likeButtons.forEach(button => {
+		button.addEventListener('click', function () {
+			const img = this.querySelector('img');
+			if (img.src.includes('favorite.svg')) {
+				img.src = '../img/black_heart.svg';
+			} else {
+				img.src = '../img/favorite.svg';
+			}
+		});
+	});
+});
