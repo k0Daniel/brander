@@ -63,6 +63,7 @@ body {
 	border-bottom: 1px solid #eaeaea;
 	display: flex;
 	font-size: 24px;
+	justify-content: center;
 }
 
 .wrapper {
@@ -207,7 +208,7 @@ details li {
 	font-weight: 400;
 }
 .header__wrapper {
-	max-width: 1920px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 }
@@ -229,7 +230,7 @@ details li {
 	font-size: 40px;
 	font-weight: 600;
 	pointer-events: none;
-	margin: 0 478px 0 713px;
+	margin: 0 auto;
 }
 .header__searchbox {
 	width: 30px;
@@ -745,9 +746,6 @@ details li {
 	body {
 		max-width: 1844px;
 	}
-	.header__logo {
-		margin: 0 440px 0 513px;
-	}
 	.main__h1 {
 		font-size: 53px;
 	}
@@ -767,9 +765,6 @@ details li {
 @media screen and (max-width: 1692px) and (min-width: 1602px) {
 	body {
 		max-width: 1481px;
-	}
-	.header__logo {
-		margin: 0 278px 0 513px;
 	}
 	.main__h1 {
 		max-width: 600px;
@@ -810,9 +805,6 @@ details li {
 @media screen and (max-width: 1601px) and (min-width: 1481px) {
 	body {
 		max-width: 1481px;
-	}
-	.header__logo {
-		margin: 0 278px 0 513px;
 	}
 	.main__h1 {
 		max-width: 600px;
@@ -871,9 +863,6 @@ details li {
 	body {
 		max-width: 1440px;
 	}
-	.header__logo {
-		margin: 0 278px 0 513px;
-	}
 	.main__h1 {
 		max-width: 600px;
 		font-size: 50px;
@@ -929,9 +918,6 @@ details li {
 @media screen and (max-width: 1439px) and (min-width: 1101px) {
 	body {
 		max-width: 1439px;
-	}
-	.header__logo {
-		margin: 0 18% 0 68%;
 	}
 	.header__searchbox {
 		margin-left: 40px;
@@ -1023,9 +1009,6 @@ details li {
 	}
 	.main__text-container {
 		max-width: 400px;
-	}
-	.header__logo {
-		margin: 0 29% 0 65%;
 	}
 	.main__h1 {
 		font-size: 36px;
@@ -1130,9 +1113,6 @@ details li {
 	}
 	.main__text-container {
 		max-width: 400px;
-	}
-	.header__logo {
-		margin: 0 15% 0 60%;
 	}
 	.main__h1 {
 		font-size: 36px;
@@ -1426,9 +1406,6 @@ details li {
 	}
 	.header__wrapper {
 		width: 100%;
-	}
-	.header__logo {
-		margin: 0 auto 0 auto;
 	}
 	.header__logo {
 		font-size: 20px;
@@ -1739,12 +1716,6 @@ details li {
 	}
 	.header {
 		padding: 20px 17px 21px 16px;
-	}
-	.header__wrapper {
-		width: 100%;
-	}
-	.header__logo {
-		margin: 0 66px 0 133px;
 	}
 	.header__logo {
 		font-size: 20px;
@@ -3257,7 +3228,7 @@ li {
 
 .product__recommendation-more {
 	display: flex;
-	margin: 30px  auto 0 auto;
+	margin: 30px auto 0 auto;
 	box-sizing: border-box;
 	border: 2px solid rgb(21, 21, 21);
 	border-radius: 7px;
