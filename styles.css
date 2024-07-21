@@ -496,6 +496,7 @@ details li {
 	width: 100%;
 	height: 100%;
 	background: rgba(71, 71, 71, 0.5);
+	z-index: 10;
 }
 .searchbox-big {
 	width: 1569px;
@@ -758,6 +759,9 @@ details li {
 	.main__wrapper {
 		max-width: 1601px;
 	}
+	#searchbox__close-button {
+		right: 50px;
+	}
 }
 @media screen and (max-width: 1692px) and (min-width: 1602px) {
 	.main__h1 {
@@ -794,6 +798,10 @@ details li {
 	}
 	#button_up {
 		right: 12%;
+	}
+	#searchbox__close-button {
+		right: 75px;
+		width: 15px;
 	}
 }
 @media screen and (max-width: 1601px) and (min-width: 1481px) {
@@ -847,6 +855,9 @@ details li {
 	}
 	#search__input {
 		max-width: 650px;
+	}
+	#searchbox__close-button {
+		right: 50px;
 	}
 }
 
@@ -980,6 +991,9 @@ details li {
 	#search__input {
 		max-width: 650px;
 	}
+	#searchbox__close-button {
+		right: 50px;
+	}
 }
 
 @media screen and (max-width: 1110px) and (min-width: 1024px) {
@@ -1074,6 +1088,10 @@ details li {
 	}
 	#search__input {
 		max-width: 650px;
+	}
+	#searchbox__close-button {
+		right: 17px;
+		width: 5px;
 	}
 }
 
